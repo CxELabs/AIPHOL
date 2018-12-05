@@ -50,7 +50,7 @@ This lab was developed for use in a structured VM environment with the following
 	- SQL Server 2016+ (Any version will work for AIP Scanner, but full SQL Enterprise was used for this lab setup due to coexistence of SharePoint Server.  If using SQL Express, make sure to use Scanner01\SQLExpress as the SQL Server name in the Scanner Install PowerShell Script)
 	- SharePoint Server 2016 Single Server install
 	- Demo PII content deployed to a document library at http://Scanner01/documents and in a fileshare shared as \\Scanner01\documents
-	- Test PII content is available at https://github.com/kemckinnmsft/AIPLAB/blob/master/Content/PII.zip
+	- Test PII content is available at https://github.com/CxELabs/AIPHOL/blob/master/Media/PII.zip
 
 
 - 3 Windows 10 Enterprise Clients (CLIENT01-03)
@@ -143,11 +143,11 @@ For several of the exercises in this lab series, you will require an active subs
 1. Browse to **https://azure.microsoft.com/en-us/free**
 2. Click the **Start Free** button in the middle of the screen.
 
-	![Start Free](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/free.png)
+	![Start Free](https://github.com/CxELabs/AIPHOL/blob/master/Media/free.png)
 1. Sign in using your **Global Admin credentials** for your test tenant.
 1. Fill out the information to sign up for a free Azure subscription.
 
-	![Sign UP](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/signup.png)
+	![Sign UP](https://github.com/CxELabs/AIPHOL/blob/master/Media/signup.png)
 -----
 # Assign User Licenses
 
@@ -167,13 +167,13 @@ In this task, we will assign licenses to users that have been synced to the Offi
 
 2. Check the box to select all users and click **Edit product licenses**.
 
-	![tpq0eb7f.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/tpq0eb7f.jpg)
+	![tpq0eb7f.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/tpq0eb7f.jpg)
 1. On the Assign products page, click **Next**.
 
-	![nzzweacz.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/nzzweacz.jpg)
+	![nzzweacz.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/nzzweacz.jpg)
 1. On the Replace existing products page, turn on licenses for **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** and click **Replace**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9xomkr35.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/9xomkr35.jpg)
 	
 	> NOTE: If there are no licenses available for Office 365 Enterprise E5, check the box next to Remove all product licenses... and click Replace. Wait for that to complete, then check the boxes next to only the accounts listed in the table below and repeat the steps above to assign the licenses.
 	>
@@ -194,7 +194,7 @@ In this task, we will join 3 systems to the Azure AD tenant to provide SSO capab
 1. On Client01, right-click on the start menu and click **Run**.
 1. In the Run dialog, type **ms-settings:workplace** and click **OK**.
 
-	>![mssettings.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/mssettings.png)
+	>![mssettings.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/mssettings.png)
 
 1. In the Access Work or School settings menu, click on **+ Connect** and enter the credentials below to workplace join the client.
 
@@ -210,7 +210,7 @@ In this task, we will join 3 systems to the Azure AD tenant to provide SSO capab
 1. Right-click on the start menu and click **Run**.
 1. In the Run dialog, type **ms-settings:workplace** and click **OK**.
 
-	>![mssettings.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/mssettings.png)
+	>![mssettings.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/mssettings.png)
 
 1. In the Access Work or School settings menu, click on **+ Connect** and enter the credentials below to workplace join the client.
 
@@ -226,7 +226,7 @@ In this task, we will join 3 systems to the Azure AD tenant to provide SSO capab
 1. Right-click on the start menu and click **Run**.
 1. In the Run dialog, type **ms-settings:workplace** and click **OK**.
 
-	>![mssettings.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/mssettings.png)
+	>![mssettings.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/mssettings.png)
 
 1. In the Access Work or School settings menu, click on **+ Connect** and enter the credentials below to workplace join the client.
 
@@ -271,7 +271,7 @@ After completing this lab, you will be able to:
 
 Even before configuring an AIP classification taxonomy, customers can scan and identify files containing sensitive information based on the built-in sensitive information types included in the Microsoft Classification Engine.  
 
-![ahwj80dw.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ahwj80dw.jpg)
+![ahwj80dw.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ahwj80dw.jpg)
 
 Often, this can help drive an appropriate level of urgency and attention to the risk customers face if they delay rolling out AIP classification and protection.  
 
@@ -286,7 +286,7 @@ In order to collect log data from Azure Information Protection clients and servi
 1. Switch to Client01.
 1. In the InPrivate window, navigate to **https://portal.azure.com/**
 	>
-	>![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/cznh7i2b.jpg)
+	>![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/cznh7i2b.jpg)
 
 	> NOTE: If necessary, log in using the username and password below:
 	>
@@ -296,17 +296,17 @@ In order to collect log data from Azure Information Protection clients and servi
 	
 1. After logging into the portal, type the word **info** into the **search bar** and press **Enter**, then click on **Azure Information Protection**. 
 
-	![2598c48n.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/2598c48n.jpg)
+	![2598c48n.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/2598c48n.jpg)
 	
 	> NOTE: If you do not see the search bar at the top of the portal, click on the **Magnifying Glass** icon to expand it.
 	>
-	> ![ny3fd3da.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ny3fd3da.jpg)
+	> ![ny3fd3da.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ny3fd3da.jpg)
 
 1. In the Azure Information Protection blade, under **Manage**, click **Configure analytics (preview)**.
 
 1. Next, click on **+ Create new workspace**.
 
-	![qu68gqfd.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qu68gqfd.jpg)
+	![qu68gqfd.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/qu68gqfd.jpg)
 1. In the Log analytics workspace using the values in the table below and click **OK**.
 
 	|||
@@ -315,13 +315,13 @@ In order to collect log data from Azure Information Protection clients and servi
 	|Resource Group|**AIP-RG**|
 	|Location|**East US**|
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/5butui15.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/5butui15.jpg)
 1. Next, back in the Configure analytics (preview) blade, **check the box** next to the workspace and click **OK**.
 
-	![gste52sy.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/gste52sy.jpg)
+	![gste52sy.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/gste52sy.jpg)
 1. Click **Yes**, in the confirmation dialog.
 
-	![zgvmm4el.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/zgvmm4el.jpg)
+	![zgvmm4el.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/zgvmm4el.jpg)
 -----
 # AIP Scanner Setup
 In this task we will install the AIP scanner binaries and create the Azure AD Applications necessary for authentication.
@@ -339,7 +339,7 @@ The first step in configuring the AIP Scanner is to install the service and conn
 
 1. Right-click on the **PowerShell** icon in the taskbar and click on **Run as Administrator**.
 
-	![7to6p334.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/7to6p334.jpg)
+	![7to6p334.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/7to6p334.jpg)
 
 1. At the PowerShell prompt, type **$SQL = "Scanner01"** and press **Enter**.
 1. Next, type **Install-AIPScanner -SQLServerInstance $SQL** and press **Enter**.
@@ -349,11 +349,11 @@ The first step in configuring the AIP Scanner is to install the service and conn
 
 	**Somepass1**
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/pc9myg9x.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/pc9myg9x.jpg)
 
 	> NOTE: You should see a success message like the one below. 
 	>
-	>![w7goqgop.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/w7goqgop.jpg)
+	>![w7goqgop.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/w7goqgop.jpg)
 	>
 
 ## Creating Azure AD Applications for the AIP Scanner
@@ -407,7 +407,7 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 1. In the new notepad window, copy the command to the clipboard.
 1. Click on the Start menu and type **PowerShell**, right-click on the PowerShell program, and click **Run as a different user**.
 
-	![zgt5ikxl.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/zgt5ikxl.jpg)
+	![zgt5ikxl.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/zgt5ikxl.jpg)
 
 1. When prompted, enter the username and password below and click **OK**.
 
@@ -422,15 +422,15 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 
 	**Somepass1**
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qfxn64vb.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/qfxn64vb.jpg)
 
 1. In the Permissions requested window, click **Accept**.
 
-   ![nucv27wb.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/nucv27wb.jpg)
+   ![nucv27wb.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/nucv27wb.jpg)
    
 	>NOTE: You will a message like the one below in the PowerShell window once complete.
 	>
-	>![y2bgsabe.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/y2bgsabe.jpg)
+	>![y2bgsabe.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/y2bgsabe.jpg)
 1. **Close the current PowerShell window**.
 1. **In the admin PowerShell window** and type the command below and press **Enter**.
 
@@ -457,13 +457,13 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
     ```
 	>NOTE: Notice that we added the **-SetDefaultLabel Off** switch to each of these repositories.  This is necessary because our Global policy has a Default label of **General**.  If we did not add this switch, any file that did not match a condition would be labeled as General when we do the enforced scan.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/00niixfd.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/00niixfd.jpg)
 1. To verify the repositories configured, run the command below.
 	
     ```
     Get-AIPScannerRepository
     ```
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/n5hj5e7j.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/n5hj5e7j.jpg)
 
 -----
 
@@ -483,14 +483,14 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
  	
 1. Right-click on the **Windows** button in the lower left-hand corner and click on **Event Viewer**.
  
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/cjvmhaf0.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/cjvmhaf0.jpg)
 1. Expand **Application and Services Logs** and click on **Azure Information Protection**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/dy6mnnpv.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/dy6mnnpv.jpg)
  
 	>NOTE: You will see an event like the one below when the scanner completes the cycle.
 	>
-	>![agnx2gws.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/agnx2gws.jpg)
+	>![agnx2gws.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/agnx2gws.jpg)
  
 1. Next, switch to Client01, open a **File Explorer** window, and browse to **\\\Scanner01.contoso.azure\c$\users\aipscanner\AppData\Local\Microsoft\MSIP\Scanner\Reports**.
 
@@ -504,11 +504,11 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
 
 	>NOTE: Since there are no Automatic conditions configured yet, the scanner found no matches for the 141 files scanned despite 136 of them having sensitive data.
 	>
-	>![aukjn7zr.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/aukjn7zr.jpg)
+	>![aukjn7zr.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/aukjn7zr.jpg)
 	>
 	>The details contained in the DetailedReport.csv can be used to identify the types of sensitive data you need to create AIP rules for in the Azure Portal.
 	>
-	>![9y52ab7u.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9y52ab7u.jpg)
+	>![9y52ab7u.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/9y52ab7u.jpg)
 
 	>NOTE: We will revisit this information later in the lab to review discovered data and create Sensitive Data Type to Classification mappings.
 
@@ -530,31 +530,31 @@ However, there are times when external collaboration is required, so we will con
 
 1. On Client01, in the Azure Information Protection blade, under **Classifications** in the left pane, click on **Labels** to load the Azure Information Protection – Labels blade.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/mhocvtih.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/mhocvtih.jpg)
 
 1. In the Azure Information Protection – Labels blade, right-click on **Confidential** and click **Add a sub-label**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/uktfuwuk.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/uktfuwuk.jpg)
 
 1. In the Sub-label blade, type **Contoso Internal** for the **Label display name** and for **Description** enter text similar to **Confidential data that requires protection, which allows Contoso Internal employees full permissions. Data owners can track and revoke content.**
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/4luorc0u.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/4luorc0u.jpg)
 
 1. Then, under **Set permissions for documents and emails containing this label**, click **Protect**, and under **Protection**, click on **Azure (cloud key)**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/tp97a19d.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/tp97a19d.jpg)
 
 1. In the Protection blade, click **+ Add Permissions**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/layb2pvo.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/layb2pvo.jpg)
 
 1. In the Add permissions blade, click on **+ Add contoso – All members** and click **OK**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/zc0iuoyz.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/zc0iuoyz.jpg)
 
 1. In the Protection blade, click **OK**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/u8jv46zo.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/u8jv46zo.jpg)
 
 1. In the Sub-label blade, scroll down to the **Set visual marking (such as header or footer)** section and under **Documents with this label have a header**, click **On**.
 
@@ -569,37 +569,37 @@ However, there are times when external collaboration is required, so we will con
 
 	> NOTE: These are sample values to demonstrate marking possibilities and **NOT** a best practice.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/0vdoc6qb.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/0vdoc6qb.jpg)
 
 1. To complete creation of the new sub-label, click the **Save** button and then click **OK** in the Save settings dialog.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/89nk9deu.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/89nk9deu.jpg)
 
 1. In the Azure Information Protection - Labels blade, expand **Confidential** (if necessary) and then click on **Recipients Only**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/eiiw5zbg.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/eiiw5zbg.jpg)
 
 1. In the Label: Recipients Only blade, change the **Label display name** from **Recipients Only** to **Do Not Forward**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/v54vd4fq.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/v54vd4fq.jpg)
 
 1. Next, in the **Set permissions for documents and emails containing this label** section, under **Protection**, click **Azure (cloud key): User defined**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qwyranz0.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/qwyranz0.jpg)
 
 1. In the Protection blade, under **Set user-defined permissions (Preview)**, verify that only the box next to **In Outlook apply Do Not Forward** is checked, then click **OK**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/16.png)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/16.png)
 
 	> NOTE: Although there is no action added during this step, it is included to show that this label will only display in Outlook and not in Word, Excel, PowerPoint or File Explorer.
 
 1. Click **Save** in the Label: Recipients Only blade and **OK** to the Save settings prompt. 
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9spkl24i.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/9spkl24i.jpg)
 
 1.  Click the **X** in the upper right corner of the blade to close.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/98pvhwdv.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/98pvhwdv.jpg)
 
 -----
 
@@ -610,7 +610,7 @@ In this task, we will assign the new sub-label to the Global policy and configur
 
 1. In the Azure Information Protection blade, under **Classifications** on the left, click **Policies** then click the **Global** policy.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/24qjajs5.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/24qjajs5.jpg)
 
 1. In the Policy: Global blade, **wait for the labels to load**.
 
@@ -628,15 +628,15 @@ In this task, we will assign the new sub-label to the Global policy and configur
 	For email messages with attachments, apply a label…|Automatic
 	Add the Do Not Forward button to the Outlook ribbon|Off
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/mtqhe3sj.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/mtqhe3sj.jpg)
 
 1. Click **Save**, then **OK** to complete configuration of the Global policy.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1p1q4pxe.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/1p1q4pxe.jpg)
 
 1. Click the **X** in the upper right corner to close the Policy: Global blade.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/m6e4r2u2.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/m6e4r2u2.jpg)
 
 -----
 
@@ -647,55 +647,55 @@ Now that you have learned how to work with global labels and policies, we will c
 
 1. Under **Classifications** on the left, click **Labels**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/50joijwb.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/50joijwb.jpg)
 
 1. In the Azure Information Protection – Labels blade, right-click on **Highly-Confidential** and click **Add a sub-label**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/tasz9t0i.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/tasz9t0i.jpg)
 
 1. In the Sub-label blade, enter **Legal Only** for the **Label display name** and for **Description** enter **Data is classified and protected. Legal department staff can edit, forward and unprotect.**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/lpvruk49.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/lpvruk49.jpg)
 
 1. Then, under **Set permissions for documents and emails containing this label**, click **Protect** and under **Protection**, click **Azure (cloud key)**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6ood4jqu.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/6ood4jqu.jpg)
 
 1. In the Protection blade, under **Protection settings**, click the **+ Add permissions** link.
 
-	![ozzumi7l.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ozzumi7l.jpg)
+	![ozzumi7l.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ozzumi7l.jpg)
 
 1. In the Add permissions blade, click **+ Browse directory**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/2lvwim24.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/2lvwim24.jpg)
 
 1. In the AAD Users and Groups blade, **wait for the names to load**, then check the boxes next to **Adam Smith** and **Alice Anderson**, and click the **Select** button.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/uishk9yh.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/uishk9yh.jpg)
 
 	> NOTE: In a production environment, you will typically use a synced or Azure AD Group rather than choosing individuals.
 
 1. In the Add permissions blade, click **OK**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/stvnaf4f.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/stvnaf4f.jpg)
 
 1. In the Protection blade, under **Allow offline access**, reduce the **Number of days the content is available without an Internet connection** value to **3** and press **OK** .
 
 	> NOTE: This value determines how many days a user will have offline access from the time a document is opened, and an initial Use License is acquired.  While this provides convenience for users, it is recommended that this value be set appropriately based on the sensitivity of the content.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/j8masv1q.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/j8masv1q.jpg)
 
 1. Click **Save** in the Sub-label blade and **OK** to the Save settings prompt to complete the creation of the Legal Only sub-label.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/dfhoii1x.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/dfhoii1x.jpg)
 
 1. In the Azure Information Protection blade, under **Classifications** on the left, click **Policies** then click the **+Add a new policy** link.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ospsddz6.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ospsddz6.jpg)
 
 1. In the Policy blade, for Policy name, type **No Default Label Scoped Policy** and click on **Select which users or groups get this policy. Groups must be email-enabled.**
 
-	![1sjw3mc7.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1sjw3mc7.jpg)
+	![1sjw3mc7.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1sjw3mc7.jpg)
 
 1. In the AAD Users and Groups blade, click on **Users/Groups**.  
 1. Then in the second AAD Users and Groups blade, **wait for the names to load** and check the boxes next to **AIPScanner**, **Adam Smith**, and **Alice Anderson**.
@@ -704,23 +704,23 @@ Now that you have learned how to work with global labels and policies, we will c
 1. Click the **Select** button.
 1. Finally, click **OK**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/onne7won.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/onne7won.jpg)
 
 1. In the Policy blade, under the labels, click on **Add or remove labels** to add the scoped label.
 
-	![b6e9nbui.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/b6e9nbui.jpg)
+	![b6e9nbui.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/b6e9nbui.jpg)
 
 1. In the Policy: Add or remove labels blade, check the box next to **Legal Only** and click **OK**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/c2429kv9.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/c2429kv9.jpg)
 
 1. In the Policy blade, under **Configure settings to display and apply on Information Protection end users** section, under **Select the default label**, select **None** as the default label for this scoped policy.
 
-	![4mxceage.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/4mxceage.jpg)
+	![4mxceage.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/4mxceage.jpg)
 
 1. Click **Save**, then **OK** to complete creation of the No Default Label Scoped Policy.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/41jembjf.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/41jembjf.jpg)
 
 1. Click on the **X** in the upper right-hand corner to close the policy.
 
@@ -733,22 +733,22 @@ There are many advanced policy settings that are useful to tailor your Azure Inf
 
 1. In the Azure Information Protection blade, under **Classifications** on the left, click on **Labels** and then click on the **General** label.
 
-    ![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/rvn4xorx.jpg)
+    ![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/rvn4xorx.jpg)
 
 1. In the Label: General blade, scroll to the bottom and copy the **Label ID** and close the blade using the **X** in the upper right-hand corner.
 
-    ![8fi1wr4d.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/8fi1wr4d.jpg)
+    ![8fi1wr4d.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/8fi1wr4d.jpg)
 
 1. In the AIP Portal, under **Classifications** on the left, click on **Policies**. 
 1. **Right-click** on the **No Default Label Scoped Policy** and click on **Advanced settings**.
 
-    ![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/2jo71ugb.jpg)
+    ![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/2jo71ugb.jpg)
 
 1. In the Advanced settings blade, in the textbox under **NAME**, type **OutlookDefaultLabel**.  In the textbox under **VALUE**, paste the **Label ID** for the **General** label you copied previously, then click **Save and close**.
 
     > WARNING: CAUTION: Please check to ensure that there are **no spaces** before or after the **Label ID** when pasting as this will cause the setting to not apply.
 
-    ![ezt8sfs3.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ezt8sfs3.jpg)
+    ![ezt8sfs3.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ezt8sfs3.jpg)
 
 	> NOTE: This and additional Advanced Policy Settings can be found at [https://docs.microsoft.com/en-us/azure/information-protection/rms-client/client-admin-guide-customizations ](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/client-admin-guide-customizations)
 
@@ -763,7 +763,7 @@ However, helping your users to properly classify and protect sensitive data at t
 
 1. Under **Dashboards** on the left, click on **Data discovery (Preview)** to view the results of the discovery scan we performed previously.
 
-	![Dashboard.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Dashboard.png)
+	![Dashboard.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Dashboard.png)
 
 	> NOTE: Notice that there are no labeled or protected files shown at this time.  This uses the AIP P1 discovery functionality available with the AIP Scanner. Only the predefined Office 365 Sensitive Information Types are available with AIP P1 as Custom Sensitive Information Types require automatic conditions to be defined, which is an AIP P2 feature.
 
@@ -771,52 +771,52 @@ However, helping your users to properly classify and protect sensitive data at t
 
 1. Under **Classifications** on the left, click **Labels** then expand **Confidential**, and click on **Contoso Internal**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/jyw5vrit.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/jyw5vrit.jpg)
 1. In the Label: Contoso Internal blade, scroll down to the **Configure conditions for automatically applying this label** section, and click on **+ Add a new condition**.
 
-	![cws1ptfd.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/cws1ptfd.jpg)
+	![cws1ptfd.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/cws1ptfd.jpg)
 1. In the Condition blade, in the **Select information types** search box, type **EU** and check the boxes next to the **items shown below**.
 
-	![xaj5hupc.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/xaj5hupc.jpg)
+	![xaj5hupc.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/xaj5hupc.jpg)
 1. Next, before saving, replace EU in the search bar with **credit** and check the box next to **Credit Card Number**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9rozp61b.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/9rozp61b.jpg)
 1. Click **Save** in the Condition blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/41o5ql2y.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/41o5ql2y.jpg)
 
 	> NOTE: By default the condition is set to Recommended and a policy tip is created with standardized text.
 	>
-	>  ![qdqjnhki.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qdqjnhki.jpg)
+	>  ![qdqjnhki.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/qdqjnhki.jpg)
 
 1. Click **Save** in the Label: Contoso Internal blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/rimezmh1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/rimezmh1.jpg)
 1. Press the **X** in the upper right-hand corner to close the Label: Contoso Internal blade.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/em124f66.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/em124f66.jpg)
 1. Next, expand **Highly Confidential** and click on the **All Employees** sub-label.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/2eh6ifj5.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/2eh6ifj5.jpg)
 1. In the Label: All Employees blade, scroll down to the **Configure conditions for automatically applying this label** section, and click on **+ Add a new condition**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/8cdmltcj.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/8cdmltcj.jpg)
 1. In the Condition blade, select the **Custom** tab and enter **Password** for the **Name** and in the textbox below **Match exact phrase or pattern**, type **pass@word1**.
 
-	![ra7dnyg6.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ra7dnyg6.jpg)
+	![ra7dnyg6.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ra7dnyg6.jpg)
 1. Click **Save** in the Condition blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ie6g5kta.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ie6g5kta.jpg)
 1. In the Labels: All Employees blade, in the **Configure conditions for automatically applying this label** section, click **Automatic**.
 
-	![245lpjvk.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/245lpjvk.jpg)
+	![245lpjvk.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/245lpjvk.jpg)
 	> NOTE: The policy tip is automatically updated when you switch the condition to Automatic.
 1. Click **Save** in the Label: All Employees blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/gek63ks8.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/gek63ks8.jpg)
 1. Press the **X** in the upper right-hand corner to close the Label: All Employees blade.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/wzwfc1l4.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/wzwfc1l4.jpg)
 
 -----
 
@@ -838,11 +838,11 @@ In this task, we will activate the labels from the Azure Portal for use in the S
 
 1. Click **Activate** and **Yes**.
 
-	![o0ahpimw.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/o0ahpimw.jpg)
+	![o0ahpimw.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/o0ahpimw.jpg)
 
 	>NOTE: You should see a message similar to the one below.
 	>
-	> ![SCCMigration.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/SCCMigration.png) 
+	> ![SCCMigration.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/SCCMigration.png) 
 
 1. In a new tab, browse to **https://protection.office.com/** and click on **Classifications** and **Labels** to review the migrated labels. 
 
@@ -867,33 +867,33 @@ One of the most common use cases for AIP is the ability to send emails using Use
 1. **Close Outlook** and **reopen** to complete activation.
 1. Once Outlook opens, click on the **New email** button.
 
-	![6wan9me1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6wan9me1.jpg)
+	![6wan9me1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/6wan9me1.jpg)
 
 	> NOTE: Note that the **Sensitivity** is set to **General** by default.
 	>
-	> ![5esnhwkw.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/5esnhwkw.jpg)
+	> ![5esnhwkw.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/5esnhwkw.jpg)
 
 1. Send an email to **Adam Smith** and **Alice Anderson** (**Adam Smith;Alice Anderson**). You may **optionally add an external email address** (preferably from a major social provider like gmail, yahoo, or outlook.com) to test the external recipient experience. For the **Subject** and **Body** type **Test Do Not Forward Email**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/h0eh40nk.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/h0eh40nk.jpg)
 
 1. In the Sensitivity Toolbar, click on the **pencil** icon to change the Sensitivity label.
 
-	![901v6vpa.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/901v6vpa.jpg)
+	![901v6vpa.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/901v6vpa.jpg)
 
 	> NOTE: If the AIP toolbar is not signed in, click **Sign In** and wait for it to use SSO and download policies (about 30 seconds).
 
 1. Click on **Confidential** and then the **Do Not Forward** sub-label and click **Send**.
 
-	![w8j1w1lm.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/w8j1w1lm.jpg)
+	![w8j1w1lm.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/w8j1w1lm.jpg)
 
 	> NOTE: If you receive the error message below, click on the Confidential \ Contoso Internal sub-label to force the download of your AIP identity certificates, then follow the steps above to change the label to Confidential \ Do Not Forward.
 	>
-	> ![6v6duzbd.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6v6duzbd.jpg)
+	> ![6v6duzbd.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/6v6duzbd.jpg)
 
 1. Switch over to Client01 or Client02 and open Outlook, run through setup, and review the email in Adam Smith or Alice Anderson’s Outlook.  You will notice that the email is automatically shown in Outlook natively.
 
-	![0xby56qt.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/0xby56qt.jpg)
+	![0xby56qt.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/0xby56qt.jpg)
 
 	> NOTE: The **Do Not Forward** protection template will normally prevent the sharing of the screen and taking screenshots when protected documents or emails are loaded.  However, since this screenshot was taken within a VM, the operating system was unaware of the protected content and could not prevent the capture.  
 	>
@@ -901,11 +901,11 @@ One of the most common use cases for AIP is the ability to send emails using Use
 
 	> NOTE: If you elected to send a Do Not Forward message to an external email, you will have an experience similar to the images below.  These captures are included to demonstrate the functionality for those that chose not to send an external message.
 	>
-	> ![tzj04wi9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/tzj04wi9.jpg)
+	> ![tzj04wi9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/tzj04wi9.jpg)
 	> 
 	> Here the user has received an email from Evan Green and they can click on the **Read the message** button.
 	>
-	>![wiefwcho.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/wiefwcho.jpg)
+	>![wiefwcho.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/wiefwcho.jpg)
 	>
 	>Next, the user is given the option to either log in using the social identity provider (**Sign in with Google**, Yahoo, Microsoft Account), or to **sign in with a one-time passcode**.
 	>
@@ -913,15 +913,15 @@ One of the most common use cases for AIP is the ability to send emails using Use
 	>
 	>If they choose one-time passcode, they will receive an email like the one below with the one-time passcode.
 	>
-	>![m6voa9xi.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/m6voa9xi.jpg)
+	>![m6voa9xi.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/m6voa9xi.jpg)
 	>
 	>They can then use this code to authenticate to the Office 365 Message Encryption portal.
 	>
-	>![8pllxint.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/8pllxint.jpg)
+	>![8pllxint.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/8pllxint.jpg)
 	>
 	>After using either of these authentication methods, the user will see a portal experience like the one shown below.
 	>
-	>![3zi4dlk9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/3zi4dlk9.jpg)
+	>![3zi4dlk9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/3zi4dlk9.jpg)
 -----
 
 # Testing Global Policy
@@ -932,26 +932,26 @@ In this task, we will create a document and send an email to demonstrate the fun
 1. Switch to Client03.
 1. In Microsoft Outlook, click on the **New email** button.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6wan9me1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/6wan9me1.jpg)
 
 1. Send an email to Adam Smith, Alice Anderson, and yourself (**Adam Smith;Alice Anderson;YourExternalEmail**).  For the **Subject** and **Body** type **Test Contoso Internal Email**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9gkqc9uy.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/9gkqc9uy.jpg)
 
 1. In the Sensitivity Toolbar, click on the **pencil** icon to change the Sensitivity label.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/901v6vpa.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/901v6vpa.jpg)
 
 1. Click on **Confidential** and then **Contoso Internal** and click **Send**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/yhokhtkv.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/yhokhtkv.jpg)
 1. On Client01 or Client02, observe that you are able to open the email natively in the Outlook client. Also observe the **header text** that was defined in the label settings.
 
-	![bxz190x2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/bxz190x2.jpg)
+	![bxz190x2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/bxz190x2.jpg)
 	
 1. In your email, note that you will be unable to open this message.  This experience will vary depending on the client you use (the image below is from Outlook 2016 for Mac) but they should have similar messages after presenting credentials. Since this is not the best experience for the recipient, later in the lab we will configure Exchange Online Mail Flow Rules to prevent content classified with internal only labels from being sent to external users.
 	
-	![52hpmj51.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/52hpmj51.jpg)
+	![52hpmj51.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/52hpmj51.jpg)
 
 -----
 
@@ -963,26 +963,26 @@ In this task, we will create a document and send an email from one of the users 
 1. Switch to Client01.
 1. In Microsoft Outlook, click on the **New email** button.
 	
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ldjugk24.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ldjugk24.jpg)
 	
 1. Send an email to Alice Anderson and Evan Green (**Alice Anderson;Evan Green**).  For the **Subject** and **Body** type **Test Highly Confidential Legal Email**.
 1. In the Sensitivity Toolbar, click on **Highly Confidential** and the **Legal Only** sub-label, then click **Send**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ny1lwv0h.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ny1lwv0h.jpg)
 1. Switch to Client02 and click on the email.  You should be able to open the message natively in the client as Alice.
 
-	![qeqtd2yr.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qeqtd2yr.jpg)
+	![qeqtd2yr.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/qeqtd2yr.jpg)
 1. Switch to Client03 and click on the email. You should be unable to open the message as Evan.
 
-	![6y99u8cl.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6y99u8cl.jpg)
+	![6y99u8cl.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/6y99u8cl.jpg)
 
 	> NOTE: You may notice that the Office 365 Message Encryption wrapper message is displayed in the preview pane.  It is important to note that the content of the email is not displayed here.  The content of the message is contained within the encrypted message.rpmsg attachment and only authorized users will be able to decrypt this attachment.
 	>
-	>![w4npbt49.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/w4npbt49.jpg)
+	>![w4npbt49.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/w4npbt49.jpg)
 	>
 	>If an unauthorized recipient clicks on **Read the message** to go to the OME portal, they will be presented with the same wrapper message.  Like the external recipient from the previous task, this is not an ideal experience. So, you may want to use a mail flow rule to manage scoped labels as well.
 	>
-	>![htjesqwe.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/htjesqwe.jpg)
+	>![htjesqwe.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/htjesqwe.jpg)
 
 1. On Client01, open **Microsoft Word**.
 1. Create a new **Blank document** and type **This is a test document** and **save the document**.
@@ -1004,29 +1004,29 @@ In this task, we will test the configured recommended and automatic conditions w
 
 1. Notice that you are prompted with a recommendation to change the classification to Confidential \ Contoso Internal. Click on **Change now** to set the classification and protect the document.
 
-	![url9875r.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/url9875r.jpg)
+	![url9875r.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/url9875r.jpg)
 	> NOTE: Notice that, like the email in Task 2 of this exercise, the header value configured in the label is added to the document.
 	>
-	>![dcq31lz1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/dcq31lz1.jpg)
+	>![dcq31lz1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/dcq31lz1.jpg)
 1. In Microsoft Word, create a new **Blank document** and type **my password is pass@word1** and **save** the document.
 
 	>NOTE: Notice that the document is automatically classified and protected wioth the Highly Confidential \ All Employees label.
 	>
-	>![6vezzlnj.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6vezzlnj.jpg)
+	>![6vezzlnj.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/6vezzlnj.jpg)
 1. Next, in Microsoft Outlook, click on the **New email** button.
 	
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ldjugk24.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ldjugk24.jpg)
 	
 1. Draft an email to Alice Anderson and Adam Smith (**Alice Anderson;Adam Smith**).  For the **Subject** and **Body** type **Test Highly Confidential All Employees Automation**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/4v3wrrop.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/4v3wrrop.jpg)
 1. Attach the **second document you created** to the email.
 
-	![823tzyfd.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/823tzyfd.jpg)
+	![823tzyfd.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/823tzyfd.jpg)
 
 	> NOTE: Notice that the email was automatically classified as Highly Confidential \ All Employees.  This functionality is highly recommended because matching the email classification to attachments provides a much more cohesive user experience and helps to prevent inadvertent information disclosure in the body of sensitive emails.
 	>
-	>![yv0afeow.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/yv0afeow.jpg)
+	>![yv0afeow.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/yv0afeow.jpg)
 
 1. In the email, click **Send**.
 -----
@@ -1037,7 +1037,7 @@ In this task, we will perform bulk classification using the built-in functionali
 1. On Scanner01, browse to the **C:\\**.
 2. Right-click on the PII folder and select **Classify and Protect**.
    
-   ![CandP.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/CandP.png)
+   ![CandP.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/CandP.png)
 1. When prompted, click use another user and use the credentials below to authenticate:
 
 	**AIPScanner@Tenantname.onmicrosoft.com**
@@ -1046,7 +1046,7 @@ In this task, we will perform bulk classification using the built-in functionali
 
 1. In the AIP client Classify and protect interface, select **Highly Confidential\\All Employees** and press **Apply**. 
 
-	![CandP2.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/CandP2.png)
+	![CandP2.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/CandP2.png)
 
 > NOTE: You may review the results in a text file by clicking show results, or simply close the window.
 -----
@@ -1070,11 +1070,11 @@ Now that we know what types of sensitive data we need to protect, we will config
 
 3. In the Label : Contoso Internal blade, under **Select how this label is applied: automatically or recommended to user**, click **Automatic**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1ifaer4l.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/1ifaer4l.jpg)
 
 1. Click **Save** in the Label: Contoso Internal blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/rimezmh1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/rimezmh1.jpg)
 
 1. Press the **X** in the upper right-hand corner to close the Label: Contoso Internal blade.
 
@@ -1097,7 +1097,7 @@ In this task, we will set the AIP scanner to enforce the conditions we set up in
 
 	> NOTE: Note that this time we used the DiscoverInformationTypes -PolicyOnly switch before starting the scan. This will have the scanner only evaluate the conditions we have explicitly defined in conditions.  This increases the effeciency of the scanner and thus is much faster.  After reviewing the event log we will see the result of the enforced scan.
 	>
-	>![k3rox8ew.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/k3rox8ew.jpg)
+	>![k3rox8ew.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/k3rox8ew.jpg)
 	>
 	>If we switch back to Client01 and look in the reports directory we opened previously at **\\\Scanner01.contoso.azure\c$\users\aipscanner\AppData\Local\Microsoft\MSIP\Scanner\Reports**, you will notice that the old scan reports are zipped in the directory and only the most recent results aare showing.  
 	>
@@ -1107,12 +1107,12 @@ In this task, we will set the AIP scanner to enforce the conditions we set up in
 	>
 	>**Pa$$w0rd**
 	>
-	>![s8mn092f.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/s8mn092f.jpg)
+	>![s8mn092f.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/s8mn092f.jpg)
 	>
 	>Also, the DetailedReport.csv now shows the files that were protected.
 	>
 	>
-	>![6waou5x3.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6waou5x3.jpg)
+	>![6waou5x3.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/6waou5x3.jpg)
 	>
 	>![Open Fullscreen](6waou5x3.jpg)
 
@@ -1133,14 +1133,14 @@ Now that we have Classified and Protected documents using the scanner, we can re
 	>
 	>**Pa$$w0rd**
  
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/hipavcx6.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/hipavcx6.jpg)
 3. Open one of the Contoso Purchasing Permissions documents or Run For The Cure spreadsheets.
  
  	
 	
 	> NOTE: Observe that the same document is now classified as Confidential \ Contoso Internal. 
 	>
-	>![s1okfpwu.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/s1okfpwu.jpg)
+	>![s1okfpwu.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/s1okfpwu.jpg)
 -----
 # Reviewing the Dashboards
 
@@ -1152,16 +1152,16 @@ We can now go back and look at the dashboards and observe how they have changed.
 
 	> NOTE: Observe that there are now entries from the AIP scanner, File Explorer, Microsoft Outlook, and Microsoft Word based on our activities in this lab. You may not see details of label data right away as this takes longer to process.  I have included a screenshot of the results below, but you may check back later in the lab to see the full results.
 	>
-	> ![Usage.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Usage.png)
+	> ![Usage.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Usage.png)
 	>
-	> ![Usage2.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Usage2.png)
+	> ![Usage2.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Usage2.png)
 2. Next, under dashboards, click on **Data discovery (Preview)**.
 
 	> NOTE: As mentioned above, label data may not show up initially but you should start seeing protection data in the portal.  I have included a screenshot of the final result so please check back throughout the lab to see the label data from the AIP scanner.
 	>
-	> ![Discovery.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Discovery.png)
+	> ![Discovery.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Discovery.png)
 	> 
-	> ![discovery2.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/discovery2.png)
+	> ![discovery2.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/discovery2.png)
 	
 -----
 # Exercise 6: Exchange Online IRM Capabilities
@@ -1216,13 +1216,13 @@ In this task, we will configure a mail flow rule to detect sensitive information
 
 1. Switch to the Azure Portal and under **Classifications** click on Labels, then expand **Confidential** and click on **Contoso Internal**.
 
-	![w2w5c7xc.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/w2w5c7xc.jpg)
+	![w2w5c7xc.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/w2w5c7xc.jpg)
 
 	> NOTE: If you closed the azure portal, open an Edge InPrivate window and navigate to **https://portal.azure.com**.
 
 1. In the Label: Contoso Internal blade, scroll down to the Label ID and **copy** the value.
 
-	![lypurcn5.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/lypurcn5.jpg)
+	![lypurcn5.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/lypurcn5.jpg)
 
 	> WARNING: Make sure that there are no spaces before or after the Label ID as this will cause the mail flow rule to be ineffective.
 
@@ -1259,39 +1259,39 @@ In this task, we will send emails to demonstrate the results of the Exchange Onl
 1. Switch to Client03.
 1. In Microsoft Outlook, click on the **New email** button.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6wan9me1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/6wan9me1.jpg)
 
 1. Send an email to Adam Smith, Alice Anderson, and yourself (**Adam Smith;Alice Anderson;YourExternalEmail**).  For the **Subject**, type **Test Credit Card Email** and for the **Body**, type **My AMEX card number is 344047014854133. The expiration date is 09/28, and the CVV is 4368**, then click **Send**.
 
 1. Switch to Client01 and review the received email.
 
-	![pidqfaa1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/pidqfaa1.jpg)
+	![pidqfaa1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/pidqfaa1.jpg)
 
 	> NOTE: Note that there is no encryption applied to the message.  That is because we set up the rule to only apply to external recipients.  If you were to leave that condition out of the mail flow rule, internal recipients would also receive an encrypted copy of the message.  The image below shows the encrypted message that was received externally.
 	>
-	>![c5foyeji.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/c5foyeji.jpg)
+	>![c5foyeji.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/c5foyeji.jpg)
 	>
 	>Below is another view of the same message received in Outlook Mobile on an iOS device.
 	>
-	>![599ljwfy.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/599ljwfy.jpg)
+	>![599ljwfy.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/599ljwfy.jpg)
 
 1. Next, in Microsoft Outlook, click on the **New email** button.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6wan9me1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/6wan9me1.jpg)
 1. Send an email to Adam Smith, Alice Anderson, and yourself (**Adam Smith;Alice Anderson;YourExternalEmail**).  For the **Subject** and **Body** type **Another Test Contoso Internal Email**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/d476fmpg.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/d476fmpg.jpg)
 
 1. In the Sensitivity Toolbar, click on the **pencil** icon to change the Sensitivity label.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/901v6vpa.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/901v6vpa.jpg)
 
 1. Click on **Confidential** and then **Contoso Internal** and click **Send**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/yhokhtkv.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/yhokhtkv.jpg)
 1. In about a minute, you should receive an **Undeliverable** message from Exchange with the users that the message did not reach and the message you defined in the previous task.
 
-	![kgjvy7ul.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/kgjvy7ul.jpg)
+	![kgjvy7ul.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/kgjvy7ul.jpg)
 
 > NOTE: There are many other use cases for Exchange Online mail flow rules but this should give you a quick view into what is possible and how easy it is to improve the security of your sensitive data through the use of Exchange Online mail flow rules and Azure Information Protection.
 
@@ -1323,7 +1323,7 @@ In this task, we will enable Information Rights Management in SharePoint Online.
  
 1. Hover over the **Admin centers** section of the bar on the left and choose **SharePoint**.
 
-	![r5a21prc.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/r5a21prc.jpg)
+	![r5a21prc.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/r5a21prc.jpg)
  
 1. In the SharePoint admin center click on **settings**.
 
@@ -1331,19 +1331,19 @@ In this task, we will enable Information Rights Management in SharePoint Online.
  
 1. Click the **Refresh IRM Settings** button.
 
-	![1qv8p13n.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1qv8p13n.jpg)
+	![1qv8p13n.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1qv8p13n.jpg)
 
 	>NOTE: After the browser refreshes, you can scroll down to the same section and you will see a message stating **We successfully refreshed your setings.**
 	>
-	>![daeglgk9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/daeglgk9.jpg)
+	>![daeglgk9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/daeglgk9.jpg)
 1. Scroll down and click **OK**.
 1. Next, navigate to **https://admin.microsoft.com/AdminPortal/Home#/users**.
 1. Click on **Nuck Chorris** and on the profile page, next to Roles, click **Edit**.
 
-	![df6t9nk1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/df6t9nk1.jpg)
+	![df6t9nk1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/df6t9nk1.jpg)
 1. On the Edit user roles page, select **Customized administrator**, check the box next to **SharePoint administrator**, and click **Save**.
 
-	![3rj47ym9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/3rj47ym9.jpg)
+	![3rj47ym9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/3rj47ym9.jpg)
 1. **Close the Edge InPrivate browser** window to **clear the credentials**.
 
  
@@ -1362,52 +1362,52 @@ In this task, we will create a new SharePoint site and enable Information Rights
 	**NinjaCat123**
 1. Click on **SharePoint** in the list.
 
-	![twsp6mvj.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/twsp6mvj.jpg)
+	![twsp6mvj.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/twsp6mvj.jpg)
 
 1. Dismiss any introductory screens and, at the top of the page, click **+ Create site**.
 
-	![7v8wctu2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/7v8wctu2.jpg)
+	![7v8wctu2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/7v8wctu2.jpg)
 
 	NOTE: If you do not see the **+ Create site** button, resize the VM window by dragging the divider for the instructions to the right until the VM resizes and you can see the button.
  
 1. On the Create a site page, click **Team site**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/406ah98f.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/406ah98f.jpg)
  
 1. On the next page, type **IRM Demo** for **Site name** and for the **Site description**, type **This is a team site for demonstrating SharePoint IRM capabilities** and set the **Privacy settings** to **Public - anyone in the organization can access the site** and click **Next**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ug4tg8cl.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ug4tg8cl.jpg)
 
 1. On the Add group members page, click **Finish**.
 1. In the newly created site, on the left navigation bar, click **Documents**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/yh071obk.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/yh071obk.jpg)
  
 1. In the upper right-hand corner, click the **Settings icon** and click **Library settings**.
 
-	![1qo31rp6.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1qo31rp6.jpg)
+	![1qo31rp6.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1qo31rp6.jpg)
  
 1. On the Documents > Settings page, under **Permissions and Management**, click **Information Rights Management**.
 
-	![ie2rmsk2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ie2rmsk2.jpg)
+	![ie2rmsk2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ie2rmsk2.jpg)
  
 	>WARNING: It may take up to 10 minutes for the global IRM settings to apply to document libraries.  If this has not appeared after a few minutes, try creating a new document library to see if the link is available. 
  
 1. On the Settings > Information Rights Management Settings page, check the box next to Restrict permissions on this library on download and under **Create a permission policy title** type **Contoso IRM Policy**, and under **Add a permission policy description** type **This content contained within this file is for use by Contoso Corporation employees only.**
  
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/m9v7v7ln.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/m9v7v7ln.jpg)
 1. Next, click on **SHOW OPTIONS** below the policy description and in the **Set additional IRM library settings** section, check the boxes next to **Do not allow users to upload documents that do not support IRM** and **Prevent opening documents in the browser for this Document Library**.
 
-	![0m2qqtqn.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/0m2qqtqn.jpg)
+	![0m2qqtqn.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/0m2qqtqn.jpg)
 	>NOTE: These setting prevent the upload of documents that cannot be protected using Information Rights Managment (Azure RMS) and forces protected documents to be opened in the appropriate application rather than rendering in the SharePoint Online Viewer.
  
 1. Next, under the **Configure document access rights** section, check the box next to **Allow viewers to run script and screen reader to function on downloaded documents**.
 
-	![72fkz2ds.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/72fkz2ds.jpg)
+	![72fkz2ds.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/72fkz2ds.jpg)
 	>NOTE: Although this setting may reduce the security of the document, this is typically provided for accessibility purposes.
 1. Finally, in the **Configure document access rights** section, check the box next to  **Users must verify their credentials using this interval (days)** and type **7** in the text box.
 
-	![tt1quq3f.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/tt1quq3f.jpg)
+	![tt1quq3f.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/tt1quq3f.jpg)
 1. At the bottom of the page, click **OK** to complete the configuration of the protected document library.
 1. On the Documents > Settings page, in the left-hand navigation pane, click on **Documents** to return to the document library. section.
  
@@ -1430,17 +1430,17 @@ Create an unprotected Word document, label it as Internal, and upload it to the 
 1. **Save** the document and **close Microsoft Word**.
 1. Return to the IRM Demo protected document library and click on **Upload > Files**.
 
-	![m95ixvv1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/m95ixvv1.jpg)
+	![m95ixvv1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/m95ixvv1.jpg)
 1. Navigate to the location where you saved the document, select it and click **Open** to upload the file.
  
 1. Next, minimize the browser window and right-click on the desktop. Hover over **New >** and click on **Microsoft Access Database**. Name the database **BadFile**.
 
-	![e3nxt4a2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/e3nxt4a2.jpg)
+	![e3nxt4a2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/e3nxt4a2.jpg)
 1. Return to the document library and attempt to upload the file.
 
 	>NOTE: Notice that you are unable to upload the file because it cannot be protected.
 	>	
-	>![432hu3pi.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/432hu3pi.jpg)
+	>![432hu3pi.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/432hu3pi.jpg)
 -----
 
 # SharePoint IRM Functionality
@@ -1450,20 +1450,20 @@ Files that are uploaded to a SharePoint IRM protected document library are prote
 
 1. Select the uploaded document and click **Share** in the action bar.
 
-	![1u2jsod7.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1u2jsod7.jpg)
+	![1u2jsod7.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1u2jsod7.jpg)
 1. In the Send Link dialog, type **Alice** and click on **Alice Anderson** then **Send**.
 
-	![j6w1v4z9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/j6w1v4z9.jpg)
+	![j6w1v4z9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/j6w1v4z9.jpg)
 1. Switch to Client02.
 1. Open Outlook and click on the email from Nuck Chorris, then click on the **Open** link.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/v39ez284.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/v39ez284.jpg)
 1. This will launch the IRM Demo document library.  Click on the document to open it in Microsoft Word.
 
-	![xmv9dmvk.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/xmv9dmvk.jpg)
+	![xmv9dmvk.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/xmv9dmvk.jpg)
 1. After the document opens, you will be able to observe that it is protected.  Click on the View Permissions button to review the restrictions set on the document.
 
-	![4uya6mro.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/4uya6mro.jpg)
+	![4uya6mro.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/4uya6mro.jpg)
 	>NOTE: These permissions are based on the level of access that they user has to the document library.  In a production environment most users would likely have less rights than shown in this example.
 
 -----
@@ -1477,7 +1477,7 @@ Congratulations! You have completed the Azure Information Protection Hands on La
 
 Even before configuring an AIP classification taxonomy, customers can scan and identify files containing sensitive information based on the built-in sensitive information types included in the Microsoft Classification Engine.  
 
-![ahwj80dw.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ahwj80dw.jpg)
+![ahwj80dw.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ahwj80dw.jpg)
 
 Often, this can help drive an appropriate level of urgency and attention to the risk customers face if they delay rolling out AIP classification and protection.  
 
@@ -1492,7 +1492,7 @@ In order to collect log data from Azure Information Protection clients and servi
 1. Switch to Client01.
 1. In the InPrivate window, navigate to **https://portal.azure.com/**
 	>
-	>![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/cznh7i2b.jpg)
+	>![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/cznh7i2b.jpg)
 
 	> NOTE: If necessary, log in using the username and password below:
 	>
@@ -1502,17 +1502,17 @@ In order to collect log data from Azure Information Protection clients and servi
 	
 1. After logging into the portal, type the word **info** into the **search bar** and press **Enter**, then click on **Azure Information Protection**. 
 
-	![2598c48n.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/2598c48n.jpg)
+	![2598c48n.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/2598c48n.jpg)
 	
 	> NOTE: If you do not see the search bar at the top of the portal, click on the **Magnifying Glass** icon to expand it.
 	>
-	> ![ny3fd3da.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ny3fd3da.jpg)
+	> ![ny3fd3da.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ny3fd3da.jpg)
 
 1. In the Azure Information Protection blade, under **Manage**, click **Configure analytics (preview)**.
 
 1. Next, click on **+ Create new workspace**.
 
-	![qu68gqfd.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qu68gqfd.jpg)
+	![qu68gqfd.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/qu68gqfd.jpg)
 1. In the Log analytics workspace using the values in the table below and click **OK**.
 
 	|||
@@ -1521,13 +1521,13 @@ In order to collect log data from Azure Information Protection clients and servi
 	|Resource Group|**AIP-RG**|
 	|Location|**East US**|
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/5butui15.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/5butui15.jpg)
 1. Next, back in the Configure analytics (preview) blade, **check the box** next to the workspace and click **OK**.
 
-	![gste52sy.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/gste52sy.jpg)
+	![gste52sy.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/gste52sy.jpg)
 1. Click **Yes**, in the confirmation dialog.
 
-	![zgvmm4el.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/zgvmm4el.jpg)
+	![zgvmm4el.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/zgvmm4el.jpg)
 -----
 # AIP Scanner Setup
 In this task we will install the AIP scanner binaries and create the Azure AD Applications necessary for authentication.
@@ -1545,7 +1545,7 @@ The first step in configuring the AIP Scanner is to install the service and conn
 
 1. Right-click on the **PowerShell** icon in the taskbar and click on **Run as Administrator**.
 
-	![7to6p334.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/7to6p334.jpg)
+	![7to6p334.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/7to6p334.jpg)
 
 1. At the PowerShell prompt, type **$SQL = "Scanner01"** and press **Enter**.
 1. Next, type **Install-AIPScanner -SQLServerInstance $SQL** and press **Enter**.
@@ -1555,11 +1555,11 @@ The first step in configuring the AIP Scanner is to install the service and conn
 
 	**Somepass1**
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/pc9myg9x.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/pc9myg9x.jpg)
 
 	> NOTE: You should see a success message like the one below. 
 	>
-	>![w7goqgop.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/w7goqgop.jpg)
+	>![w7goqgop.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/w7goqgop.jpg)
 	>
 
 ## Creating Azure AD Applications for the AIP Scanner
@@ -1615,7 +1615,7 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 1. In the new notepad window, copy the command to the clipboard.
 1. Click on the Start menu and type **PowerShell**, right-click on the PowerShell program, and click **Run as a different user**.
 
-	![zgt5ikxl.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/zgt5ikxl.jpg)
+	![zgt5ikxl.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/zgt5ikxl.jpg)
 
 1. When prompted, enter the username and password below and click **OK**.
 
@@ -1630,15 +1630,15 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 
 	**Somepass1**
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/qfxn64vb.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/qfxn64vb.jpg)
 
 1. In the Permissions requested window, click **Accept**.
 
-   ![nucv27wb.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/nucv27wb.jpg)
+   ![nucv27wb.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/nucv27wb.jpg)
    
 	>NOTE: You will a message like the one below in the PowerShell window once complete.
 	>
-	>![y2bgsabe.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/y2bgsabe.jpg)
+	>![y2bgsabe.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/y2bgsabe.jpg)
 1. **Close the current PowerShell window**.
 1. **In the admin PowerShell window** and type the command below and press **Enter**.
 
@@ -1665,13 +1665,13 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
     ```
 	>NOTE: Notice that we added the **-SetDefaultLabel Off** switch to each of these repositories.  This is necessary because our Global policy has a Default label of **General**.  If we did not add this switch, any file that did not match a condition would be labeled as General when we do the enforced scan.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/00niixfd.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/00niixfd.jpg)
 1. To verify the repositories configured, run the command below.
 	
     ```
     Get-AIPScannerRepository
     ```
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/n5hj5e7j.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/n5hj5e7j.jpg)
 
 -----
 
@@ -1691,14 +1691,14 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
  	
 1. Right-click on the **Windows** button in the lower left-hand corner and click on **Event Viewer**.
  
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/cjvmhaf0.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/cjvmhaf0.jpg)
 1. Expand **Application and Services Logs** and click on **Azure Information Protection**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/dy6mnnpv.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/dy6mnnpv.jpg)
  
 	>NOTE: You will see an event like the one below when the scanner completes the cycle.
 	>
-	>![agnx2gws.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/agnx2gws.jpg)
+	>![agnx2gws.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/agnx2gws.jpg)
  
 1. Next, switch to Client01, open a **File Explorer** window, and browse to **\\\Scanner01.contoso.azure\c$\users\aipscanner\AppData\Local\Microsoft\MSIP\Scanner\Reports**.
 
@@ -1712,11 +1712,11 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
 
 	>NOTE: Since there are no Automatic conditions configured yet, the scanner found no matches for the 141 files scanned despite 136 of them having sensitive data.
 	>
-	>![aukjn7zr.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/aukjn7zr.jpg)
+	>![aukjn7zr.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/aukjn7zr.jpg)
 	>
 	>The details contained in the DetailedReport.csv can be used to identify the types of sensitive data you need to create AIP rules for in the Azure Portal.
 	>
-	>![9y52ab7u.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9y52ab7u.jpg)
+	>![9y52ab7u.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/9y52ab7u.jpg)
 
 	>NOTE: We will revisit this information later in the lab to review discovered data and create Sensitive Data Type to Classification mappings.
 
@@ -1731,7 +1731,7 @@ However, helping your users to properly classify and protect sensitive data at t
 
 1. Under **Dashboards** on the left, click on **Data discovery (Preview)** to view the results of the discovery scan we performed previously.
 
-	![Dashboard.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Dashboard.png)
+	![Dashboard.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Dashboard.png)
 
 	> NOTE: Notice that there are no labeled or protected files shown at this time.  This uses the AIP P1 discovery functionality available with the AIP Scanner. Only the predefined Office 365 Sensitive Information Types are available with AIP P1 as Custom Sensitive Information Types require automatic conditions to be defined, which is an AIP P2 feature.
 
@@ -1739,47 +1739,47 @@ However, helping your users to properly classify and protect sensitive data at t
 
 1. Under **Classifications** on the left, click **Labels** then expand **Confidential**, and click on **All Employees**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/jyw5vrit.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/jyw5vrit.jpg)
 1. In the Label: All Employees blade, scroll down to the **Configure conditions for automatically applying this label** section, and click on **+ Add a new condition**.
 
-	![cws1ptfd.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/cws1ptfd.jpg)
+	![cws1ptfd.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/cws1ptfd.jpg)
 1. In the Condition blade, in the **Select information types** search box, type **EU** and check the boxes next to the **items shown below**.
 
-	![xaj5hupc.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/xaj5hupc.jpg)
+	![xaj5hupc.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/xaj5hupc.jpg)
 
 1. Click **Save** in the Condition blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/41o5ql2y.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/41o5ql2y.jpg)
 1. In the Labels: All Employees blade, in the **Configure conditions for automatically applying this label** section, click **Automatic**.
 
 1. Click **Save** in the Label: All Employees blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/rimezmh1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/rimezmh1.jpg)
 1. Press the **X** in the upper right-hand corner to close the Label: All Employees blade.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/em124f66.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/em124f66.jpg)
 1. Next, expand **Highly Confidential** and click on the **All Employees** sub-label.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/2eh6ifj5.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/2eh6ifj5.jpg)
 1. In the Label: All Employees blade, scroll down to the **Configure conditions for automatically applying this label** section, and click on **+ Add a new condition**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/8cdmltcj.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/8cdmltcj.jpg)
 1. In the Condition blade, in the search bar type **credit** and check the box next to **Credit Card Number**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/9rozp61b.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/9rozp61b.jpg)
 1. Click **Save** in the Condition blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ie6g5kta.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ie6g5kta.jpg)
 1. In the Labels: All Employees blade, in the **Configure conditions for automatically applying this label** section, click **Automatic**.
 
-	![245lpjvk.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/245lpjvk.jpg)
+	![245lpjvk.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/245lpjvk.jpg)
 	> NOTE: The policy tip is automatically updated when you switch the condition to Automatic.
 1. Click **Save** in the Label: All Employees blade and **OK** to the Save settings prompt.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/gek63ks8.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/gek63ks8.jpg)
 1. Press the **X** in the upper right-hand corner to close the Label: All Employees blade.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/wzwfc1l4.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/wzwfc1l4.jpg)
 
 -----
 
@@ -1801,11 +1801,11 @@ In this task, we will activate the labels from the Azure Portal for use in the S
 
 1. Click **Activate** and **Yes**.
 
-	![o0ahpimw.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/o0ahpimw.jpg)
+	![o0ahpimw.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/o0ahpimw.jpg)
 
 	>NOTE: You should see a message similar to the one below.
 	>
-	> ![SCCMigration.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/SCCMigration.png) 
+	> ![SCCMigration.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/SCCMigration.png) 
 
 1. In a new tab, browse to **https://protection.office.com/** and click on **Classifications** and **Labels** to review the migrated labels. 
 
@@ -1818,7 +1818,7 @@ In this task, we will perform bulk classification using the built-in functionali
 1. On Scanner01, browse to the **C:\\**.
 2. Right-click on the PII folder and select **Classify and Protect**.
    
-   ![CandP.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/CandP.png)
+   ![CandP.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/CandP.png)
 1. When prompted, click use another user and use the credentials below to authenticate:
 
 	**AIPScanner@Tenantname.onmicrosoft.com**
@@ -1827,7 +1827,7 @@ In this task, we will perform bulk classification using the built-in functionali
 
 1. In the AIP client Classify and protect interface, select **Highly Confidential\\All Employees** and press **Apply**. 
 
-	![CandP2.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/CandP2.png)
+	![CandP2.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/CandP2.png)
 
 > NOTE: You may review the results in a text file by clicking show results, or simply close the window.
 -----
@@ -1858,7 +1858,7 @@ In this task, we will set the AIP scanner to enforce the conditions we set up in
 
 	> NOTE: Note that this time we used the DiscoverInformationTypes -PolicyOnly switch before starting the scan. This will have the scanner only evaluate the conditions we have explicitly defined in conditions.  This increases the effeciency of the scanner and thus is much faster.  After reviewing the event log we will see the result of the enforced scan.
 	>
-	>![k3rox8ew.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/k3rox8ew.jpg)
+	>![k3rox8ew.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/k3rox8ew.jpg)
 	>
 	>If we switch back to Client01 and look in the reports directory we opened previously at **\\\Scanner01.contoso.azure\c$\users\aipscanner\AppData\Local\Microsoft\MSIP\Scanner\Reports**, you will notice that the old scan reports are zipped in the directory and only the most recent results aare showing.  
 	>
@@ -1868,12 +1868,12 @@ In this task, we will set the AIP scanner to enforce the conditions we set up in
 	>
 	>**Pa$$w0rd**
 	>
-	>![s8mn092f.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/s8mn092f.jpg)
+	>![s8mn092f.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/s8mn092f.jpg)
 	>
 	>Also, the DetailedReport.csv now shows the files that were protected.
 	>
 	>
-	>![6waou5x3.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6waou5x3.jpg)
+	>![6waou5x3.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/6waou5x3.jpg)
 	>
 	>![Open Fullscreen](6waou5x3.jpg)
 
@@ -1894,14 +1894,14 @@ Now that we have Classified and Protected documents using the scanner, we can re
 	>
 	>**Pa$$w0rd**
  
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/hipavcx6.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/hipavcx6.jpg)
 3. Open one of the Contoso Purchasing Permissions documents or Run For The Cure spreadsheets.
  
  	
 	
 	> NOTE: Observe that the same document is now classified as Confidential \ All Employees. 
 	>
-	>![s1okfpwu.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/s1okfpwu.jpg)
+	>![s1okfpwu.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/s1okfpwu.jpg)
 -----
 # Reviewing the Dashboards
 
@@ -1913,16 +1913,16 @@ We can now go back and look at the dashboards and observe how they have changed.
 
 	> NOTE: Observe that there are now entries from the AIP scanner, and File Explorer based on our activities in this lab. You may not see details of label data right away as this takes longer to process.  I have included a screenshot of the results below, but you may check back later in the lab to see the full results.
 	>
-	> ![Usage.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Usage.png)
+	> ![Usage.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Usage.png)
 	>
-	> ![Usage2.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Usage2.png)
+	> ![Usage2.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Usage2.png)
 2. Next, under dashboards, click on **Data discovery (Preview)**.
 
 	> NOTE: As mentioned above, label data may not show up initially but you should start seeing protection data in the portal.  I have included a screenshot of the final result so please check back throughout the lab to see the label data from the AIP scanner.
 	>
-	> ![Discovery.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/Discovery.png)
+	> ![Discovery.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/Discovery.png)
 	> 
-	> ![discovery2.png](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/discovery2.png)
+	> ![discovery2.png](https://github.com/CxELabs/AIPHOL/blob/master/Media/discovery2.png)
 	
 -----
 # Exercise 6A: Exchange Online IRM Capabilities
@@ -1977,13 +1977,13 @@ In this task, we will configure a mail flow rule to detect sensitive information
 
 1. Switch to the Azure Portal and under **Classifications** click on Labels, then expand **Confidential** and click on **All Employees**.
 
-	![w2w5c7xc.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/w2w5c7xc.jpg)
+	![w2w5c7xc.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/w2w5c7xc.jpg)
 
 	> NOTE: If you closed the azure portal, open an Edge InPrivate window and navigate to **https://portal.azure.com**.
 
 1. In the Label: All Employees blade, scroll down to the Label ID and **copy** the value.
 
-	![lypurcn5.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/lypurcn5.jpg)
+	![lypurcn5.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/lypurcn5.jpg)
 
 	> WARNING: Make sure that there are no spaces before or after the Label ID as this will cause the mail flow rule to be ineffective.
 
@@ -2022,39 +2022,39 @@ In this task, we will send emails to demonstrate the results of the Exchange Onl
 1. Switch to Client03.
 1. In Microsoft Outlook, click on the **New email** button.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6wan9me1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/6wan9me1.jpg)
 
 1. Send an email to Adam Smith, Alice Anderson, and yourself (**Adam Smith;Alice Anderson;YourExternalEmail**).  For the **Subject**, type **Test Credit Card Email** and for the **Body**, type **My AMEX card number is 344047014854133. The expiration date is 09/28, and the CVV is 4368**, then click **Send**.
 
 1. Switch to Client01 and review the received email.
 
-	![pidqfaa1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/pidqfaa1.jpg)
+	![pidqfaa1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/pidqfaa1.jpg)
 
 	> NOTE: Note that there is no encryption applied to the message.  That is because we set up the rule to only apply to external recipients.  If you were to leave that condition out of the mail flow rule, internal recipients would also receive an encrypted copy of the message.  The image below shows the encrypted message that was received externally.
 	>
-	>![c5foyeji.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/c5foyeji.jpg)
+	>![c5foyeji.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/c5foyeji.jpg)
 	>
 	>Below is another view of the same message received in Outlook Mobile on an iOS device.
 	>
-	>![599ljwfy.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/599ljwfy.jpg)
+	>![599ljwfy.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/599ljwfy.jpg)
 
 1. Next, in Microsoft Outlook, click on the **New email** button.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/6wan9me1.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/6wan9me1.jpg)
 1. Send an email to Adam Smith, Alice Anderson, and yourself (**Adam Smith;Alice Anderson;YourExternalEmail**).  For the **Subject** and **Body** type **Another Test All Employees Email**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/d476fmpg.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/d476fmpg.jpg)
 
 1. In the Sensitivity Toolbar, click on the **pencil** icon to change the Sensitivity label.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/901v6vpa.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/901v6vpa.jpg)
 
 1. Click on **Confidential** and then **All Employees** and click **Send**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/yhokhtkv.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/yhokhtkv.jpg)
 1. In about a minute, you should receive an **Undeliverable** message from Exchange with the users that the message did not reach and the message you defined in the previous task.
 
-	![kgjvy7ul.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/kgjvy7ul.jpg)
+	![kgjvy7ul.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/kgjvy7ul.jpg)
 
 > NOTE: There are many other use cases for Exchange Online mail flow rules but this should give you a quick view into what is possible and how easy it is to improve the security of your sensitive data through the use of Exchange Online mail flow rules and Azure Information Protection.
 
@@ -2086,7 +2086,7 @@ In this task, we will enable Information Rights Management in SharePoint Online.
  
 1. Hover over the **Admin centers** section of the bar on the left and choose **SharePoint**.
 
-	![r5a21prc.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/r5a21prc.jpg)
+	![r5a21prc.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/r5a21prc.jpg)
  
 1. In the SharePoint admin center click on **settings**.
 
@@ -2094,19 +2094,19 @@ In this task, we will enable Information Rights Management in SharePoint Online.
  
 1. Click the **Refresh IRM Settings** button.
 
-	![1qv8p13n.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1qv8p13n.jpg)
+	![1qv8p13n.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1qv8p13n.jpg)
 
 	>NOTE: After the browser refreshes, you can scroll down to the same section and you will see a message stating **We successfully refreshed your setings.**
 	>
-	>![daeglgk9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/daeglgk9.jpg)
+	>![daeglgk9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/daeglgk9.jpg)
 1. Scroll down and click **OK**.
 1. Next, navigate to **https://admin.microsoft.com/AdminPortal/Home#/users**.
 1. Click on **Nuck Chorris** and on the profile page, next to Roles, click **Edit**.
 
-	![df6t9nk1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/df6t9nk1.jpg)
+	![df6t9nk1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/df6t9nk1.jpg)
 1. On the Edit user roles page, select **Customized administrator**, check the box next to **SharePoint administrator**, and click **Save**.
 
-	![3rj47ym9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/3rj47ym9.jpg)
+	![3rj47ym9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/3rj47ym9.jpg)
 1. **Close the Edge InPrivate browser** window to **clear the credentials**.
 
  
@@ -2125,52 +2125,52 @@ In this task, we will create a new SharePoint site and enable Information Rights
 	**NinjaCat123**
 1. Click on **SharePoint** in the list.
 
-	![twsp6mvj.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/twsp6mvj.jpg)
+	![twsp6mvj.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/twsp6mvj.jpg)
 
 1. Dismiss any introductory screens and, at the top of the page, click **+ Create site**.
 
-	![7v8wctu2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/7v8wctu2.jpg)
+	![7v8wctu2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/7v8wctu2.jpg)
 
 	NOTE: If you do not see the **+ Create site** button, resize the VM window by dragging the divider for the instructions to the right until the VM resizes and you can see the button.
  
 1. On the Create a site page, click **Team site**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/406ah98f.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/406ah98f.jpg)
  
 1. On the next page, type **IRM Demo** for **Site name** and for the **Site description**, type **This is a team site for demonstrating SharePoint IRM capabilities** and set the **Privacy settings** to **Public - anyone in the organization can access the site** and click **Next**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ug4tg8cl.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/ug4tg8cl.jpg)
 
 1. On the Add group members page, click **Finish**.
 1. In the newly created site, on the left navigation bar, click **Documents**.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/yh071obk.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/yh071obk.jpg)
  
 1. In the upper right-hand corner, click the **Settings icon** and click **Library settings**.
 
-	![1qo31rp6.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1qo31rp6.jpg)
+	![1qo31rp6.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1qo31rp6.jpg)
  
 1. On the Documents > Settings page, under **Permissions and Management**, click **Information Rights Management**.
 
-	![ie2rmsk2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/ie2rmsk2.jpg)
+	![ie2rmsk2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/ie2rmsk2.jpg)
  
 	>WARNING: It may take up to 10 minutes for the global IRM settings to apply to document libraries.  If this has not appeared after a few minutes, try creating a new document library to see if the link is available. 
  
 1. On the Settings > Information Rights Management Settings page, check the box next to Restrict permissions on this library on download and under **Create a permission policy title** type **Contoso IRM Policy**, and under **Add a permission policy description** type **This content contained within this file is for use by Contoso Corporation employees only.**
  
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/m9v7v7ln.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/m9v7v7ln.jpg)
 1. Next, click on **SHOW OPTIONS** below the policy description and in the **Set additional IRM library settings** section, check the boxes next to **Do not allow users to upload documents that do not support IRM** and **Prevent opening documents in the browser for this Document Library**.
 
-	![0m2qqtqn.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/0m2qqtqn.jpg)
+	![0m2qqtqn.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/0m2qqtqn.jpg)
 	>NOTE: These setting prevent the upload of documents that cannot be protected using Information Rights Managment (Azure RMS) and forces protected documents to be opened in the appropriate application rather than rendering in the SharePoint Online Viewer.
  
 1. Next, under the **Configure document access rights** section, check the box next to **Allow viewers to run script and screen reader to function on downloaded documents**.
 
-	![72fkz2ds.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/72fkz2ds.jpg)
+	![72fkz2ds.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/72fkz2ds.jpg)
 	>NOTE: Although this setting may reduce the security of the document, this is typically provided for accessibility purposes.
 1. Finally, in the **Configure document access rights** section, check the box next to  **Users must verify their credentials using this interval (days)** and type **7** in the text box.
 
-	![tt1quq3f.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/tt1quq3f.jpg)
+	![tt1quq3f.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/tt1quq3f.jpg)
 1. At the bottom of the page, click **OK** to complete the configuration of the protected document library.
 1. On the Documents > Settings page, in the left-hand navigation pane, click on **Documents** to return to the document library. section.
  
@@ -2193,17 +2193,17 @@ Create an unprotected Word document, label it as Internal, and upload it to the 
 1. **Save** the document and **close Microsoft Word**.
 1. Return to the IRM Demo protected document library and click on **Upload > Files**.
 
-	![m95ixvv1.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/m95ixvv1.jpg)
+	![m95ixvv1.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/m95ixvv1.jpg)
 1. Navigate to the location where you saved the document, select it and click **Open** to upload the file.
  
 1. Next, minimize the browser window and right-click on the desktop. Hover over **New >** and click on **Microsoft Access Database**. Name the database **BadFile**.
 
-	![e3nxt4a2.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/e3nxt4a2.jpg)
+	![e3nxt4a2.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/e3nxt4a2.jpg)
 1. Return to the document library and attempt to upload the file.
 
 	>NOTE: Notice that you are unable to upload the file because it cannot be protected.
 	>	
-	>![432hu3pi.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/432hu3pi.jpg)
+	>![432hu3pi.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/432hu3pi.jpg)
 -----
 
 # SharePoint IRM Functionality
@@ -2213,20 +2213,20 @@ Files that are uploaded to a SharePoint IRM protected document library are prote
 
 1. Select the uploaded document and click **Share** in the action bar.
 
-	![1u2jsod7.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/1u2jsod7.jpg)
+	![1u2jsod7.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/1u2jsod7.jpg)
 1. In the Send Link dialog, type **Alice** and click on **Alice Anderson** then **Send**.
 
-	![j6w1v4z9.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/j6w1v4z9.jpg)
+	![j6w1v4z9.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/j6w1v4z9.jpg)
 1. Switch to Client02.
 1. Open Outlook and click on the email from Nuck Chorris, then click on the **Open** link.
 
-	![Open Screenshot](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/v39ez284.jpg)
+	![Open Screenshot](https://github.com/CxELabs/AIPHOL/blob/master/Media/v39ez284.jpg)
 1. This will launch the IRM Demo document library.  Click on the document to open it in Microsoft Word.
 
-	![xmv9dmvk.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/xmv9dmvk.jpg)
+	![xmv9dmvk.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/xmv9dmvk.jpg)
 1. After the document opens, you will be able to observe that it is protected.  Click on the View Permissions button to review the restrictions set on the document.
 
-	![4uya6mro.jpg](https://github.com/kemckinnmsft/HOL3000/blob/master/Media/4uya6mro.jpg)
+	![4uya6mro.jpg](https://github.com/CxELabs/AIPHOL/blob/master/Media/4uya6mro.jpg)
 	>NOTE: These permissions are based on the level of access that they user has to the document library.  In a production environment most users would likely have less rights than shown in this example.
 
 -----
