@@ -38,7 +38,7 @@ This lab is designed to be completed on either a native Windows 10 machine or a 
 
 Microsoft 365 E5 Tenant credentials will be provided during the event.  If you want to run through this lab after the event, you may use a tenant created through https://demos.microsoft.com or your own Microsoft 365 Tenant. This Lab Guide will be publicly available after the event at https://aka.ms/AIPHOL.
 
-*:Note: Not all exercises can be completed within 60 minutes but time estimates are provided to aid in exercise selection.
+> [!ALERT] Not all exercises can be completed within 60 minutes but time estimates are provided to aid in exercise selection.
 
 ---
 
