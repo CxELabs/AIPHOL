@@ -62,17 +62,17 @@ In this task, we will create new Azure AD users and assign licenses via PowerShe
 
 	> [!NOTE] If prompted to change the execution policy, type **y** and **Enter**.
 
-1. [] When prompted for the **Tenant name**, **click in the text box** and enter ```@lab.CloudCredential(17).TenantName```.
+1. [] When prompted for the **Tenant name**, **click in the text box** and enter ```@lab.CloudCredential(82).TenantName```.
 1. [] When prompted, provide the credentials below:
 
-	```@lab.CloudCredential(17).Username```
+	```@lab.CloudCredential(82).Username```
 
-	```@lab.CloudCredential(17).Password``` 
+	```@lab.CloudCredential(82).Password``` 
    
 	> [!KNOWLEDGE] We are running the PowerShell code below to create the accounts and groups in AAD and assign licenses for EMS E5 and Office E5. This script is also available at [https://aka.ms/labscripts](https://aka.ms/labscripts) as AADConfig.ps1.
     > 
     > #### Azure AD User and Group Configuration
-    > $tenantfqdn = "@lab.CloudCredential(17).TenantName"
+    > $tenantfqdn = "@lab.CloudCredential(82).TenantName"
     > $tenant = $tenantfqdn.Split('.')[0]
 	> 
     > #### Build Licensing SKUs
@@ -150,12 +150,12 @@ For several of the exercises in this lab series, you will require an active subs
 	!IMAGE[wdir7lb3.jpg](\Media\wdir7lb3.jpg)
 1. [] Enter the credentials below and select **Sign In**.
 
-	```@lab.CloudCredential(17).Username```
+	```@lab.CloudCredential(82).Username```
 
-	```@lab.CloudCredential(17).Password``` 
+	```@lab.CloudCredential(82).Password``` 
 
 	!IMAGE[gtg8pvp1.jpg](\Media\gtg8pvp1.jpg)
-1. [] Click **Confirm** if the email address **@lab.CloudCredential(17).Username** is listed.
+1. [] Click **Confirm** if the email address **@lab.CloudCredential(82).Username** is listed.
 
 	!IMAGE[teyx280d.jpg](\Media\teyx280d.jpg)
 7. [] **Click in the Promo code box** and type ```@lab.CloudCredential(215).PromoCode``` and click the **Claim Promo Code** button.
@@ -314,9 +314,9 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 1. [] Next, on the desktop, right-click on **GenerateAuthToken.ps1** and click **Run with PowerShell**.
 1. [] When prompted, provide the username and password below. 
 	
-	```@lab.CloudCredential(17).Username```
+	```@lab.CloudCredential(82).Username```
 	
-	```@lab.CloudCredential(17).Password```
+	```@lab.CloudCredential(82).Password```
 
 	> [!HINT] This will create a new **Web App Registration**, **Native App Registration**, and associated **Service Principals** in Azure AD. 
 	>
@@ -359,7 +359,7 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 1. [] Return to the **Notepad** window and copy the **full Set-AIPAuthentication** command into this window and run it.
 1. [] When prompted, enter the username and password below:
 
-	```AIPScanner@@lab.CloudCredential(17).TenantName```
+	```AIPScanner@@lab.CloudCredential(82).TenantName```
 
 	```Somepass1```
 
@@ -827,9 +827,9 @@ By default, many of the demo tenants provided block external communications via 
 	If(Get-TransportRule *delete*){Remove-TransportRule *delete*}
 	```
 
-	> ```@lab.CloudCredential(17).Username```
+	> ```@lab.CloudCredential(82).Username```
 	>
-	> ```@lab.CloudCredential(17).Password```
+	> ```@lab.CloudCredential(82).Password```
 
 ---
 ## Testing User Defined Permissions
@@ -840,7 +840,7 @@ One of the most common use cases for AIP is the ability to send emails using Use
 
 1. [] On @lab.VirtualMachine(Client03).SelectLink, log in using the password +++@lab.VirtualMachine(Client01).Password+++.
 2. [] Launch Microsoft Outlook, and click **Accept and start Outlook**.
-3. [] In the username box, type ```EvanG@@lab.cloudcredential(17).TenantName``` and click **Connect**.
+3. [] In the username box, type ```EvanG@@lab.cloudcredential(82).TenantName``` and click **Connect**.
 4. [] When prompted, type ```pass@word1``` and Sign in.
 5. [] On the Use this account everywhere page, click **Yes** then click **Done**.
 6. [] Once configuration completes, **uncheck the box** to **Set up Outlook Mobile** and click **OK**.
@@ -867,7 +867,7 @@ One of the most common use cases for AIP is the ability to send emails using Use
 	> !IMAGE[6v6duzbd.jpg](\Media\6v6duzbd.jpg)
 
 10. [] Switch over to @lab.VirtualMachine(Client01).SelectLink, log in using the password +++@lab.VirtualMachine(Client01).Password+++ and open Outlook. 
-11. [] Run through setup, this time using the credentials ```AdamS@@lab.CloudCredential(17).TenantName``` and ```pass@word1```. 
+11. [] Run through setup, this time using the credentials ```AdamS@@lab.CloudCredential(82).TenantName``` and ```pass@word1```. 
 12. [] Review the email in Adam Smith’s Outlook.  You will notice that the email is automatically shown in Outlook natively.
 
    !IMAGE[0xby56qt.jpg](\Media\0xby56qt.jpg)
@@ -945,7 +945,7 @@ In this task, we will create a document and send an email from one of the users 
 
 	^IMAGE[Open Screenshot](\Media\ny1lwv0h.jpg)
 1. [] Switch to @lab.VirtualMachine(Client02).SelectLink and log in with the password +++@lab.VirtualMachine(Client01).Password+++.
-11. [] Run through setup, this time using the credentials ```AliceA@@lab.CloudCredential(17).TenantName``` and ```pass@word1```. 
+11. [] Run through setup, this time using the credentials ```AliceA@@lab.CloudCredential(82).TenantName``` and ```pass@word1```. 
 12. [] Review the email in Alice Anderson’s Outlook. You should be able to open the message natively in the client as Alice.
 
 	!IMAGE[qeqtd2yr.jpg](\Media\qeqtd2yr.jpg)
@@ -1040,7 +1040,7 @@ In this task, we will perform bulk classification using the built-in functionali
    !IMAGE[CandP.png](\Media\CandP.png)
 4. [] When prompted, click use another account and use the credentials below to authenticate:
 
-	```AIPScanner@@lab.CloudCredential(17).TenantName```
+	```AIPScanner@@lab.CloudCredential(82).TenantName```
 
 	```Somepass1```
 
@@ -1094,9 +1094,9 @@ The Azure Information Protection Scanner uses Automatic conditions to identify s
 
 	> [!HINT] If necessary, open an InPrivate browsing session and navigate to ```https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/globalBlade``` and login with the credentials below. 
 	>
-	> ```@lab.CloudCredential(17).Username```
+	> ```@lab.CloudCredential(82).Username```
 	>
-	> ```@lab.CloudCredential(17).Password```
+	> ```@lab.CloudCredential(82).Password```
 
 3. [] Under **Dashboards** on the left, click on **Data discovery (Preview)** to view the results of the discovery scan we performed previously.
 
@@ -1211,7 +1211,7 @@ Now that we have Classified and Protected documents using the scanner, we can re
 
 	> [!NOTE] If asked to log in, use the credentials below.
 	>
-	> ```AdamS@@lab.CloudCredential(17).TenantName```
+	> ```AdamS@@lab.CloudCredential(82).TenantName```
 	>
 	> ```pass@word1```
 
@@ -1325,7 +1325,7 @@ The previous step enabled the AIP labels for use in the Security and Compliance 
     >```Pa$$w0rd```
 
 4. [] In the documents folder, open one of the pdf files.
-5. [] When prompted by Adobe, enter ```AdamS@@lab.CloudCredential(17).TenantName``` and press **OK** or **Next**.
+5. [] When prompted by Adobe, enter ```AdamS@@lab.CloudCredential(82).TenantName``` and press **OK** or **Next**.
 
 	> [!NOTE] If prompted, provide the password ```pass@word1```.
 
@@ -1426,9 +1426,9 @@ In this task, we will configure a mail flow rule to detect sensitive information
 1. [] In an **Administrative PowerShell** window, type ```C:\Users\LabUser\Desktop\EncryptSensitiveMFR.ps1``` and press **Enter**. 
 1. [] When prompted, provide the credentials below:
 
-	```@lab.CloudCredential(17).Username```
+	```@lab.CloudCredential(82).Username```
 
-	```@lab.CloudCredential(17).Password```
+	```@lab.CloudCredential(82).Password```
 
 	> [!NOTE] If prompted to remove a transport rule, hit **Enter**.
 
@@ -1474,9 +1474,9 @@ In this task, we will configure a mail flow rule to detect sensitive information
 1. [] In an **Administrative PowerShell** window, type ```C:\Users\LabUser\Desktop\BlockInternal.ps1``` and press **Enter**. 
 1. [] When prompted, provide the credentials below:
 
-	```@lab.CloudCredential(17).Username```
+	```@lab.CloudCredential(82).Username```
 
-	```@lab.CloudCredential(17).Password```
+	```@lab.CloudCredential(82).Password```
 
 	> [!NOTE] If prompted to remove a transport rule, hit **Enter**.
 
@@ -1524,7 +1524,7 @@ In this task, we will send emails to demonstrate the results of the Exchange Onl
 
 1. [] Log in using the credentials below.
 
-	> ```EvanG@@lab.CloudCredential(17).TenantName```
+	> ```EvanG@@lab.CloudCredential(82).TenantName```
 	>
 	> ```pass@word1```
 
