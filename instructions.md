@@ -314,9 +314,9 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 1. [] Next, on the desktop, right-click on **GenerateAuthToken.ps1** and click **Run with PowerShell**.
 1. [] When prompted, provide the username and password below. 
 	
-	```@lab.CloudCredential(134).Username```
+	```@lab.CloudCredential(17).Username```
 	
-	```@lab.CloudCredential(134).Password```
+	```@lab.CloudCredential(17).Password```
 
 	> [!HINT] This will create a new **Web App Registration**, **Native App Registration**, and associated **Service Principals** in Azure AD. 
 	>
@@ -359,7 +359,7 @@ Now that you have installed the scanner bits, you need to get an Azure AD token 
 1. [] Return to the **Notepad** window and copy the **full Set-AIPAuthentication** command into this window and run it.
 1. [] When prompted, enter the username and password below:
 
-	```AIPScanner@@lab.CloudCredential(134).TenantName```
+	```AIPScanner@@lab.CloudCredential(17).TenantName```
 
 	```Somepass1```
 
@@ -465,7 +465,7 @@ The next task is to configure repositories to scan.  These can be on-premises Sh
 
 In this exercise, we installed the AIP scanner and performed a discovery scan against an on premises CIFS repository and SharePoint document library.  Although this was a very limited demonstration of the capabilities of the AIP scanner for discovery, it helps to show how quickly you can configure this tool and get actionable information which can be used to make data driven decisions about your security posture.  Choose one of the exercises below or click the Next button to continue sequentially.
 
-- [Base Configuration](#configuring-azure-information-protection-policy)
+- [Base Configuration](#base-configuration)
 - [Bulk Classification](#bulk-classification)
 - [AIP Scanner CLP](#aip-scanner-classification-labeling-and-protection)
 - [Security and Compliance Center](#security-and-compliance-center)
@@ -573,7 +573,7 @@ However, there are times when external collaboration is required, so we will con
 ---
 
 ## Configuring Global Policy
-[:arrow_up: Top](#configuring-azure-information-protection-policy)
+[:arrow_up: Top](#base-configuration)
 
 In this task, we will assign the new sub-label to the Global policy and configure several global policy settings that will increase Azure Information Protection adoption among your users and reduce ambiguity in the user interface.
 
@@ -615,7 +615,7 @@ In this task, we will assign the new sub-label to the Global policy and configur
 ---
 
 ## Creating a Scoped Label and Policy
-[:arrow_up: Top](#configuring-azure-information-protection-policy)
+[:arrow_up: Top](#base-configuration)
 
 Now that you have learned how to work with global labels and policies, we will create a new scoped label and policy for the Legal team at Contoso.  
 
@@ -701,7 +701,7 @@ Now that you have learned how to work with global labels and policies, we will c
 ---
 
 ## Configuring Advanced Policy Settings
-[:arrow_up: Top](#configuring-azure-information-protection-policy)
+[:arrow_up: Top](#base-configuration)
 
 There are many advanced policy settings that are useful to tailor your Azure Information Protection deployment to the needs of your environment.  In this task, we will cover one of the settings that is very complimentary when using scoped policies that have no default label or a protected default label.  Because the No Default Label Scoped Policy we created in the previous task uses a protected default label, we will be adding an alternate default label for Outlook to provide a more palatable user experience for those users.
 
@@ -729,7 +729,7 @@ There are many advanced policy settings that are useful to tailor your Azure Inf
 ---
 
 ## Defining Recommended and Automatic Conditions
-[:arrow_up: Top](#configuring-azure-information-protection-policy)
+[:arrow_up: Top](#base-configuration)
 
 One of the most powerful features of Azure Information Protection is the ability to guide your users in making sound decisions around safeguarding sensitive data.  This can be achieved in many ways through user education or reactive events such as blocking emails containing sensitive data. 
 
@@ -824,23 +824,12 @@ By default, many of the demo tenants provided block external communications via 
 	$cred = Get-Credential
 	$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
 	Import-PSSession $Session
+	If(Get-TransportRule *delete*){Remove-TransportRule *delete*}
 	```
 
 	> ```@lab.CloudCredential(17).Username```
 	>
 	> ```@lab.CloudCredential(17).Password```
-
-3. [] Get the active Mail Flow Rules by typing the command below:
-
-	```
-	Get-TransportRule
-	```
-
-4. [] If a rule exists named something similar to **"Delete if sent outside the organization"**, run the code below to remove this rule.
-
-	```
-	Remove-TransportRule *Delete*
-	```
 
 ---
 ## Testing User Defined Permissions
@@ -1071,7 +1060,7 @@ In this task, we will perform bulk classification using the built-in functionali
 In this exercise, we performed bulk classification using the built-in functionality of the AIP client.  This can be useful for users that want to classify/protect many documents that exist in a central location or locations identified by scanner discovery.  Choose one of the exercises below or click the Next button to continue sequentially.
 
 - [AIP Scanner Discovery](#aip-scanner-discovery)
-- [Base Configuration](#configuring-azure-information-protection-policy)
+- [Base Configuration](#base-configuration)
 - [AIP Scanner CLP](#aip-scanner-classification-labeling-and-protection)
 - [Security and Compliance Center](#security-and-compliance-center)
 - [AIP Analytics Dashboards](#aip-analytics-dashboards)
@@ -1228,7 +1217,7 @@ Now that we have Classified and Protected documents using the scanner, we can re
 
     > [!NOTE] Observe that the document is classified as Highly Confidential \ All Employees. 
     >
-    > !IMAGE[s1okfpwu.jpg](\Media\s1okfpwu.jpg)
+    > !IMAGE[s1okfpwu.jpg](\Media\HCAE.jpg)
 
 ---
 
@@ -1238,7 +1227,7 @@ Now that we have Classified and Protected documents using the scanner, we can re
 In this exercise, we configured the AIP scanner to use automatic conditions to classify, label, and protect documents in our defined repositories.  Choose one of the exercises below or click the Next button to continue sequentially.
 
 - [AIP Scanner Discovery](#aip-scanner-discovery)
-- [Base Configuration](#configuring-azure-information-protection-policy)
+- [Base Configuration](#base-configuration)
 - [Bulk Classification](#bulk-classification)
 - [Security and Compliance Center](#security-and-compliance-center)
 - [AIP Analytics Dashboards](#aip-analytics-dashboards)
@@ -1361,7 +1350,7 @@ The previous step enabled the AIP labels for use in the Security and Compliance 
 In this exercise, we enabled and published labels and policies in the Security and Compliance Center for use with clients based on the MIP SDK.  We demonstrated this using Adobe PDF integration.  Choose one of the exercises below or click the Next button to continue sequentially.
 
 - [AIP Scanner Discovery](#aip-scanner-discovery)
-- [Base Configuration](#configuring-azure-information-protection-policy)
+- [Base Configuration](#base-configuration)
 - [Bulk Classification](#bulk-classification)
 - [AIP Scanner CLP](#aip-scanner-classification-labeling-and-protection)
 - [AIP Analytics Dashboards](#aip-analytics-dashboards)
@@ -1411,7 +1400,7 @@ In this exercise, we will go to the AIP Analytics dashboards and observe them af
 In this exercise, we reviewed the new AIP Azure Log Analytics dashboards.  Choose one of the exercises below or click the Next button to continue sequentially.
 
 - [AIP Scanner Discovery](#aip-scanner-discovery)
-- [Base Configuration](#configuring-azure-information-protection-policy)
+- [Base Configuration](#base-configuration)
 - [Bulk Classification](#bulk-classification)
 - [AIP Scanner CLP](#aip-scanner-classification-labeling-and-protection)
 - [Security and Compliance Center](#security-and-compliance-center)
@@ -1581,7 +1570,7 @@ In this task, we will send emails to demonstrate the results of the Exchange Onl
 In this exercise, we created several Exchange Online Mail Flow Rules to protect sensitive data or improve user experience.  Choose one of the exercises below or click the Next button to complete the Lab.
 
 - [AIP Scanner Discovery](#aip-scanner-discovery)
-- [Base Configuration](#configuring-azure-information-protection-policy)
+- [Base Configuration](#base-configuration)
 - [Bulk Classification](#bulk-classification)
 - [AIP Scanner CLP](#aip-scanner-classification-labeling-and-protection)
 - [Security and Compliance Center](#security-and-compliance-center)
