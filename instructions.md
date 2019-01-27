@@ -60,8 +60,6 @@ In this task, we will create new Azure AD users and assign licenses via PowerShe
 1. [] Log into @lab.VirtualMachine(Scanner01).SelectLink using the password +++@lab.VirtualMachine(Client01).Password+++
 2. [] On the desktop, **right-click** on **AADConfig.ps1** and click **Run with PowerShell**.
 
-	!IMAGE[AADConfig](\Media\AADConfig.png)
-
 	> [!NOTE] If prompted to change the execution policy, type **y** and **Enter**.
 
 1. [] When prompted for the **Tenant name**, **click in the text box** and enter ```@lab.CloudCredential(17).TenantName```.
