@@ -818,13 +818,14 @@ Now that you have 3 test systems with users being affected by different policies
 
 By default, many of the demo tenants provided block external communications via mail flow rule.  As this will hinder many demos in this lab, we will verify if such a rule exists and remove it if necesary.
 
+1. [] Switch to @lab.VirtualMachine(Scanner01).SelectLink and log in using the password +++@lab.VirtualMachine(Client01).Password+++.
 1. [] In the Admin PowerShell window, type the commands below to connect to an Exchange Online PowerShell session.  Use the credentials provided when prompted.
 
 	```
 	$cred = Get-Credential
 	$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
 	Import-PSSession $Session
-	If(Get-TransportRule *delete*){Remove-TransportRule *delete*}
+	If(Get-TransportRule){Remove-TransportRule *delete*}
 	```
 
 	> ```@lab.CloudCredential(82).Username```
