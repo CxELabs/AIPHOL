@@ -148,13 +148,12 @@ For several of the exercises in this lab series, you will require an active subs
 4. [] Click the **Start** button to get started.
 
 	!IMAGE[wdir7lb3.jpg](\Media\wdir7lb3.jpg)
-1. [] Enter the credentials below and select **Sign In**.
+1. [] Log in with the credentials below.
 
 	```@lab.CloudCredential(82).Username```
 
 	```@lab.CloudCredential(82).Password``` 
 
-	^IMAGE[Open Screenshot](\Media\gtg8pvp1.jpg)
 1. [] Click **Confirm** if the email address **@lab.CloudCredential(82).Username** is listed.
 
 	!IMAGE[teyx280d.jpg](\Media\teyx280d.jpg)
