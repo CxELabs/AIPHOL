@@ -154,7 +154,7 @@ For several of the exercises in this lab series, you will require an active subs
 
 	```@lab.CloudCredential(82).Password``` 
 
-	!IMAGE[gtg8pvp1.jpg](\Media\gtg8pvp1.jpg)
+	^IMAGE[Open Screenshot](\Media\gtg8pvp1.jpg)
 1. [] Click **Confirm** if the email address **@lab.CloudCredential(82).Username** is listed.
 
 	!IMAGE[teyx280d.jpg](\Media\teyx280d.jpg)
