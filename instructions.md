@@ -78,7 +78,7 @@ For several of the exercises in this lab series, you will require an active subs
 1. [] Click **Confirm** if the correct email address is listed.
 
 	> !IMAGE[teyx280d.jpg](\Media\teyx280d.jpg)
-7. [] Click in the Promo code box and type ```@lab.CloudCredential(244).PromoCode```, then click the **Claim Promo Code** button.
+7. [] Click in the Promo code box and type ```@lab.CloudCredential(215).PromoCode```, then click the **Claim Promo Code** button.
 
 	> !IMAGE[e1l35ko2.jpg](\Media\e1l35ko2.jpg)
 
