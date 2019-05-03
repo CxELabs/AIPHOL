@@ -246,6 +246,41 @@ In order to collect log data from Azure Information Protection clients and servi
 	!IMAGE[zgvmm4el.jpg](\Media\zgvmm4el.jpg)
 
 ---
+## Default Label Configuration
+
+In new AIP tenants, Microsoft is no longer staging default labels in the tenants by default.  Many of the demo tenants provided for this lab are in this new default state with no labels.  In this step, we will walk through the process of generation the default label set and assigning them to the global policy.
+
+>[!NOTE] If the labels already exist in your test tenant, please skip this section and continue on with the rest of the lab.
+
+1. [] In the Azure Information Protection blade, under **Classifications** click on **Labels**.
+1. [] In the Labels blade, at the top, click the **+ Generate default labels** button.
+
+	>!IMAGE[Generate.png](\Media\Generate.png)
+
+	>[!NOTE] You will see an image like the one below once the generation is complete.
+	>
+	>!IMAGE[Complete.png](\Media\Complete.png)
+
+1. [] Next, under Classifications on the left, click **Policies**.
+1. [] In the Policies blade, double-click on **Global** to open the policy.
+
+	>!IMAGE[global.png](\Media\Global.png)
+1. [] In the Policy: Global blade, wait until you see **No labels** under the LABEL DISPLAY NAME column, then click **Add or remove labels**.
+
+	>!IMAGE[nolabels.png](\Media\nolabels.png)
+1. [] In the Policy: Add or remove labels blade, **check the boxes next to each of the labels** and click **OK**.
+
+	>!IMAGE[alllabels.png](\Media\alllabels.png)
+1. [] Back in the Policy: Global blade, click **Save** and **OK**.
+1. [] Click the **X** in the upper right corner to close the Policy:Global blade.
+1. [] Next, under **Classifications** click on **Labels**.
+1. [] Expand the **Confidential** and **Highly Confidential** parent labels and your labels should look like the image below.
+
+	>!IMAGE[defaults.png](\Media\defaults.png)
+
+>[!NOTE] Creating default labels in this way also creates them in the Security and Compliance Center so you will not need to Activate Unified Labeling when you reach that step later in this lesson.
+>
+>!IMAGE[ULActivated.png](\Media\ULActivated.png)
 
 ===
 ## Azure Information Protection Lab
