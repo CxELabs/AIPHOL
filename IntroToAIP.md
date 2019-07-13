@@ -55,9 +55,9 @@ To start learning about Azure Information Protection, you first need to log into
 
 1. [] On Client01, log in with the credentials below
 
-	>**LisaV**
+	>+++LabUser+++
 	>
-	>**HighImpactUser1!**
+	>+++Pa$$w0rd+++
 1. [] From the taskbar at the bottom of the screen, launch **Internet Explorer**
 
 1. [] **Maximize** the browser window
@@ -463,11 +463,11 @@ One of the most common use cases for AIP is the ability to send emails using Use
 
 1. [] On VictimPC, log in using the credentials below
 
-    >**JeffL**
+    >+++LabUser+++
     >
-    >**Password$fun**	
+    >+++Pa$$w0rd+++	
 1. [] Launch Microsoft Outlook, and click **Accept and start Outlook**.
-1. [] In the username Box, type **MeganB@@lab.cloudcredentia139.tenantname** and click **Connect**.
+1. [] In the username Box, type **MeganB@@lab.cloudcredentia(139).tenantname** and click **Connect**.
 1. [] When prompted, type the password **@lab.CloudCredential(139).Password** and Sign in.
 5. On the Use this account everywhere page, click **Yes** then click **Done**.
 1. [] Once configuration completes, **uncheck the Box** to **Set up Outlook Mobile** and click **OK**.
@@ -491,11 +491,11 @@ One of the most common use cases for AIP is the ability to send emails using Use
 
 1. [] Switch over to Client01, log in using the credentials below
 
-	>**LisaV**
+	>+++LabUser+++
 	>
-	>**HighImpactUser1!**
+	>+++Pa$$w0rd+++
 1. [] Open **Outlook**. 
-1. [] Run through setup, this time using the credentials **AdeleV@@lab.cloudcredentia139.tenantname** and **@lab.CloudCredential(139).Password**. 
+1. [] Run through setup, this time using the credentials **AdeleV@@lab.cloudcredential(139).tenantname** and **@lab.CloudCredential(139).Password**. 
 1. [] Review the email in Adele Vance’s Outlook.  You will notice that the email is automatically shown in Outlook natively.
 
 	> If you elected to send a Do Not Forward message to an external email, you will have an experience similar to the images below.  These captures are included to demonstrate the functionality for those that chose not to send an external message.
@@ -530,9 +530,9 @@ In this task, we will create a document and send an email to demonstrate the fun
 
 1. [] Switch to VictimPC and log in with the credentials below
 
-    >**Jeffl**
+    >+++LabUser+++
     >
-    >**Password$fun**
+    >+++Pa$$w0rd+++
 1. [] In Microsoft Outlook, click on the **New email** button.
 
 1. [] Send an email to Adele Vance, Alex Wilber, and yourself (```Adele Vance;Alex Wilber;Your Email```).  
@@ -543,9 +543,9 @@ In this task, we will create a document and send an email to demonstrate the fun
 
 1. [] Switch to Client01 and log in using the credentials below
 
-	>**LisaV**
+	>+++LabUser+++
 	>
-	>**HighImpactUser1!**
+	>+++Pa$$w0rd+++
 1. [] Observe that you are able to open the email natively in the Outlook client. Also observe the **header text** that was defined in the label settings.
 
 	!IMAGE[bxz190x2.jpg](Media/bxz190x2.jpg)
@@ -567,24 +567,24 @@ In this task, we will create a document and send an email from one of the users 
 
 1. [] Switch to AdminPC and log in with the credentials below
 
-    >**SamiraA**
+    >+++LabUser+++
     >
-    >**NinjaCat123!@#**
-1. [] Run through setup, this time using the credentials **AlexW@@lab.cloudcredentia139.tenantname** and **@lab.CloudCredential(139).Password**. 
+    >+++Pa$$w0rd+++
+1. [] Run through setup, this time using the credentials **AlexW@@lab.cloudcredential(139).tenantname** and **@lab.CloudCredential(139).Password**. 
 1. [] Review the email in Alex Wilber’s Outlook. You should be able to open the message natively in the client as Alex.
 
 1. [] Switch to VictimPC and log in with the credentials below
 
-    >**Jeffl**
+    >+++LabUser+++
     >
-    >**Password$fun**
+    >+++Pa$$w0rd+++
 1. [] Click on the email. You should be unable to open the message as Megan.
 
 1. [] Switch to Client01 and log in using the credentials below
 
-	>**LisaV**
+	>+++LabUser+++
 	>
-	>**HighImpactUser1!**
+	>+++Pa$$w0rd+++
 1. [] Open **Microsoft Word**.
 1. [] Create a new **Blank document** and type ```This is a test document``` and **save the document**.
 
@@ -600,11 +600,11 @@ In this task, we will test the configured recommended and automatic conditions w
 
 1. [] Switch to VictimPC and log in with the credentials below
 
-    >**Jeffl**
+    >+++LabUser+++
     >
-    >**Password$fun**
+    >+++Pa$$w0rd+++
 1. [] Launch **Microsoft Word**.
-1. [] In Microsoft Word, create a new **Blank document** and type ```My AMEX card number is 344047014854131. [] The expiration date is 09/28, and the CVV is 4368``` and **save** the document.
+1. [] In Microsoft Word, create a new **Blank document** and type ```My AMEX card number is 344047014854133. The expiration date is 09/28, and the CVV is 4368``` and **save** the document.
 
 	> This card number is a fake number that was generated using the Credit Card Generator for Testing at [https://developer.paypal.com/developer/creditCardGenerator/](https://developer.paypal.com/developer/creditCardGenerator/).  The Microsoft Classification Engine uses the Luhn Algorithm to prevent false positives so when testing, please make sure to use valid numbers.
 
@@ -650,9 +650,9 @@ In this task, we will perform bulk classification using the built-in functionali
 
 1. [] Switch to AdminPC and log in with the credentials below
 
-    >**SamiraA**
+    >+++LabUser+++
     >
-    >**NinjaCat123!@#**
+    >+++Pa$$w0rd+++
 1. [] Browse to the **C:\\**.
 1. [] Right-click on the PII folder and select **Classify and Protect**.
    
